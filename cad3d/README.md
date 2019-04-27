@@ -1,11 +1,11 @@
 # Diseño en FreeCAD para corte láser
 
-Aquí se encuentran los archivos del diseño del robot incluyendo aquellos necesarios para realizar el corte láser.
-El robot está construido en MDF (Medium Density Fibreboard) de 3mm de espesor.
+Archivos del diseño del robot utilizando [FreeCAD](https://www.freecadweb.org/). 
+Se incluyen los archivos para realizar el corte láser en MDF (Medium Density Fibreboard) de 3mm de espesor.
 
 ## Los archivos son:
 
-* EduRoMAATapas: diseño de la tapa inferior y superior con sus encastres.
+* EduRoMAATapas: diseño de la tapa inferior y superior.
 
 * EduRoMAALaterales: diseño de los laterales izquierdo y derecho. 
 
