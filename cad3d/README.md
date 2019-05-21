@@ -13,3 +13,11 @@ Se incluyen los archivos para realizar el corte láser en MDF (Medium Density Fi
 
 * EduRoMAAAtras: diseño de la parte trasera donde se sujeta el módulo Bluethoot
 
+## Contenido de directorios
+
+* **extra**: 
+  * DibujoPCB: archivo de dibujo del contorno de la parte inferior del robot (exportado de FreeCAD para el diseño del PCB en KiCAD)
+  * EsambleEstructura: archivo FreeCAD con el ensamble de la estructura del robot
+* **pdf**: archivo pdf para el corte láser
+* **svg**: archivos exportados desde FreeCAD para el corte láser
+
