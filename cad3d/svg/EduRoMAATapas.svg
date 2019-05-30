@@ -53,68 +53,73 @@
 <path id="Shape2DView_nwe0048" d="M 50.75 -20.0 L 50.75 20.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
 <title>TapaInferiorHuecosPCB_corte2D</title>
 </g>
-<g id="Shape2DView001" transform="translate(112.999998,179.250000) scale(1,-1)">
-<path id="Shape2DView001_nwe0000" d="M 31.25 170.0 A 7.5 7.5 0 0 1 38.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0001" d="M 31.25 170.0 L -31.25 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0002" d="M 38.75 177.5 L 43.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0003" d="M -38.75 177.5 A 7.5 7.5 0 0 1 -31.25 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0004" d="M 63.7499972075 157.5 A 20.0 20.0 0 0 1 43.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0005" d="M -91.25 177.5 L -38.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0006" d="M 63.7499972075 157.5 L 63.7499972075 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0007" d="M -91.25 177.5 A 20.0 20.0 0 0 1 -111.249997983 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0008" d="M 43.7499970158 62.5 A 20.0 20.0 0 0 1 63.7499972075 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0009" d="M -111.249997983 82.5 L -111.249997983 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0010" d="M 38.7499970158 62.5 L 43.7499970158 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0011" d="M -111.249997983 82.5 A 20.0 20.0 0 0 1 -91.2500029842 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0012" d="M 38.7499970158 62.5 A 7.5 7.5 0 0 1 31.25 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0013" d="M -91.2500029842 62.5 L -38.7500029841 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0014" d="M 31.25 70.0 L -31.25 70.0000248681 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0015" d="M -31.25 70.0000248681 A 7.5 7.5 0 0 1 -38.7500029841 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<circle cx="42.45" cy="158.2" r="1.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
-<circle cx="42.45" cy="81.8" r="1.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
-<path id="Shape2DView001_nwe0018" d="M 31.25 164.5 L 31.25 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0019" d="M -31.25 164.5 L 31.25 164.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0020" d="M 31.25 157.5 L -31.25 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0021" d="M -31.25 157.5 L -31.25 164.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0022" d="M 49.5 70.0 L 49.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0023" d="M 42.5 70.0 L 49.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0024" d="M 49.5 73.0 L 42.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0025" d="M 42.5 73.0 L 42.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0026" d="M -42.5 73.0 L -42.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0027" d="M -72.5 73.0 L -42.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0028" d="M -42.5 70.0 L -72.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0029" d="M -72.5 70.0 L -72.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0030" d="M 31.25 82.5 L 31.25 75.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0031" d="M -31.25 82.5 L 31.25 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0032" d="M 31.25 75.5 L -31.25 75.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0033" d="M -31.25 75.5 L -31.25 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<g id="Shape2DView002" transform="translate(112.999998,179.250000) scale(1,-1)">
+<path id="Shape2DView002_nwe0000" d="M 31.25 170.0 A 7.5 7.5 0 0 1 38.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0001" d="M 31.25 170.0 L -31.25 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0002" d="M 38.75 177.5 L 43.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0003" d="M -38.75 177.5 A 7.5 7.5 0 0 1 -31.25 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0004" d="M 63.7499972075 157.5 A 20.0 20.0 0 0 1 43.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0005" d="M -91.25 177.5 L -38.75 177.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0006" d="M 63.7499972075 157.5 L 63.7499972075 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0007" d="M -91.25 177.5 A 20.0 20.0 0 0 1 -111.249997983 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0008" d="M 43.7499970158 62.5 A 20.0 20.0 0 0 1 63.7499972075 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0009" d="M -111.249997983 82.5 L -111.249997983 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0010" d="M 38.7499970158 62.5 L 43.7499970158 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0011" d="M -111.249997983 82.5 A 20.0 20.0 0 0 1 -91.2500029842 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0012" d="M 38.7499970158 62.5 A 7.5 7.5 0 0 1 31.25 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0013" d="M -91.2500029842 62.5 L -38.7500029841 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0014" d="M 31.25 70.0 L -31.25 70.0000248681 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0015" d="M -31.25 70.0000248681 A 7.5 7.5 0 0 1 -38.7500029841 62.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0016" d="M -98.25 100.0 L -101.25 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0017" d="M -98.25 85.0 L -98.25 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0018" d="M -101.25 100.0 L -101.25 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0019" d="M -101.25 85.0 L -98.25 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
 <circle cx="-70.0" cy="120.0" r="1.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<path id="Shape2DView002_nwe0021" d="M -89.0 106.0 L -97.0 106.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0022" d="M -97.0 106.0 L -97.0 118.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0023" d="M -97.0 118.0 L -89.0 118.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0024" d="M -89.0 118.0 L -89.0 106.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<circle cx="-93.0" cy="147.5" r="2.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<path id="Shape2DView002_nwe0026" d="M -98.25 140.0 L -101.25 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0027" d="M -98.25 155.0 L -98.25 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0028" d="M -101.25 140.0 L -101.25 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0029" d="M -101.25 155.0 L -98.25 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0030" d="M 53.75 140.0 L 50.75 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0031" d="M 53.75 155.0 L 53.75 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0032" d="M 50.75 140.0 L 50.75 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0033" d="M 50.75 155.0 L 53.75 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0034" d="M 53.75 85.0 L 53.75 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0035" d="M 50.75 85.0 L 53.75 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0036" d="M 53.75 100.0 L 50.75 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0037" d="M 50.75 100.0 L 50.75 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0038" d="M 31.25 82.5 L 31.25 75.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0039" d="M -31.25 82.5 L 31.25 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0040" d="M 31.25 75.5 L -31.25 75.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0041" d="M -31.25 75.5 L -31.25 82.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<circle cx="42.45" cy="81.8" r="1.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
 <circle cx="-84.95" cy="81.8" r="1.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<circle cx="42.45" cy="158.2" r="1.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
+<path id="Shape2DView002_nwe0045" d="M 31.25 164.5 L 31.25 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0046" d="M -31.25 164.5 L 31.25 164.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0047" d="M 31.25 157.5 L -31.25 157.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0048" d="M -31.25 157.5 L -31.25 164.5 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
 <circle cx="-84.95" cy="158.2" r="1.5" stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none"/>
-<path id="Shape2DView001_nwe0037" d="M -98.25 140.0 L -101.25 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0038" d="M -98.25 155.0 L -98.25 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0039" d="M -101.25 140.0 L -101.25 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0040" d="M -101.25 155.0 L -98.25 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0041" d="M -98.25 100.0 L -101.25 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0042" d="M -98.25 85.0 L -98.25 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0043" d="M -101.25 100.0 L -101.25 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0044" d="M -101.25 85.0 L -98.25 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0045" d="M 53.75 85.0 L 53.75 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0046" d="M 50.75 85.0 L 53.75 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0047" d="M 53.75 100.0 L 50.75 100.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0048" d="M 50.75 100.0 L 50.75 85.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0049" d="M 53.75 140.0 L 50.75 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0050" d="M 53.75 155.0 L 53.75 140.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0051" d="M 50.75 140.0 L 50.75 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0052" d="M 50.75 155.0 L 53.75 155.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0053" d="M 42.5 167.0 L 49.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0054" d="M 42.5 170.0 L 42.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0055" d="M 49.5 167.0 L 49.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0056" d="M 49.5 170.0 L 42.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0057" d="M -42.5 170.0 L -42.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0058" d="M -72.5 170.0 L -42.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0059" d="M -42.5 167.0 L -72.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<path id="Shape2DView001_nwe0060" d="M -72.5 167.0 L -72.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
-<title>TapaSuperiorEduCIAA_corte2D</title>
+<path id="Shape2DView002_nwe0050" d="M 42.5 167.0 L 49.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0051" d="M 42.5 170.0 L 42.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0052" d="M 49.5 167.0 L 49.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0053" d="M 49.5 170.0 L 42.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0054" d="M -42.5 170.0 L -42.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0055" d="M -72.5 170.0 L -42.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0056" d="M -42.5 167.0 L -72.5 167.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0057" d="M -72.5 167.0 L -72.5 170.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0058" d="M 49.5 70.0 L 49.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0059" d="M 42.5 70.0 L 49.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0060" d="M 49.5 73.0 L 42.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0061" d="M 42.5 73.0 L 42.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0062" d="M -42.5 73.0 L -42.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0063" d="M -72.5 73.0 L -42.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0064" d="M -42.5 70.0 L -72.5 70.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<path id="Shape2DView002_nwe0065" d="M -72.5 70.0 L -72.5 73.0 " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;fill:none;fill-rule: evenodd "/>
+<title>TapaSuperiorEduCIAABat_corte2D</title>
 </g>
 </svg>
