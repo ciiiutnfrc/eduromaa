@@ -1,0 +1,2674 @@
+EESchema Schematic File Version 4
+LIBS:EduRoMAA-EduCIAA-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "EduRoMAA-EduCIAA"
+Date "2019-02-23"
+Rev "v00.00"
+Comp "Centro de investigación en informática para la ingeniería"
+Comment1 "Facundo Navarro & Patricio Reus Merlo "
+Comment2 "Diego Gonzalez Dondo"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EduRoMAA-EduCIAA-rescue:TCRT5000-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue U2
+U 1 1 5C713B83
+P 4700 1925
+F 0 "U2" H 4450 1975 50  0000 L CNN
+F 1 "TCRT5000" H 4450 1875 50  0000 L CNN
+F 2 "lib_fp:TCRT5000" H 4940 2149 50  0001 C CNN
+F 3 "" H 4940 2149 50  0001 C CNN
+	1    4700 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R2
+U 1 1 5C713C9C
+P 6525 1175
+F 0 "R2" H 6375 1225 50  0000 L CNN
+F 1 "220" H 6275 1125 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 6565 1165 50  0001 C CNN
+F 3 "" H 6525 1175 50  0001 C CNN
+	1    6525 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R6
+U 1 1 5C713CF2
+P 6775 1175
+F 0 "R6" H 6843 1221 50  0000 L CNN
+F 1 "10k" H 6843 1130 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 6815 1165 50  0001 C CNN
+F 3 "" H 6775 1175 50  0001 C CNN
+	1    6775 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R8
+U 1 1 5C713D14
+P 7100 1425
+F 0 "R8" V 7025 1425 50  0000 C CNN
+F 1 "22k" V 7200 1425 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 7140 1415 50  0001 C CNN
+F 3 "" H 7100 1425 50  0001 C CNN
+	1    7100 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C2
+U 1 1 5C713D94
+P 7300 1675
+F 0 "C2" H 7100 1700 50  0000 L CNN
+F 1 "0.1u" H 7100 1600 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 7338 1525 50  0001 C CNN
+F 3 "" H 7300 1675 50  0001 C CNN
+	1    7300 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5C713E00
+P 7300 1900
+F 0 "#PWR0101" H 7300 1650 50  0001 C CNN
+F 1 "GND" H 7375 1750 50  0001 C CNN
+F 2 "" H 7300 1900 50  0001 C CNN
+F 3 "" H 7300 1900 50  0001 C CNN
+	1    7300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 1325 6525 1525
+Wire Wire Line
+	7250 1425 7300 1425
+Wire Wire Line
+	7300 1425 7300 1525
+Wire Wire Line
+	6775 1325 6775 1425
+Wire Wire Line
+	6950 1425 6775 1425
+Connection ~ 6775 1425
+Wire Wire Line
+	6775 1425 6775 1525
+Wire Notes Line
+	6975 1275 6975 2150
+Wire Notes Line
+	6975 2150 7475 2150
+Wire Notes Line
+	7475 2150 7475 1275
+Wire Notes Line
+	6975 1275 7475 1275
+Wire Wire Line
+	7300 1825 7300 1900
+Text Notes 7000 2125 0    31   ~ 0
+*LP Filter\n72 Hz
+Wire Wire Line
+	7300 1425 7550 1425
+Connection ~ 7300 1425
+Text GLabel 7550 1425 2    50   Output ~ 0
+SegLinea_Der
+$Comp
+L EduRoMAA-EduCIAA-rescue:TCRT5000-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue U1
+U 1 1 5C717F9C
+P 6375 1925
+F 0 "U1" H 6125 1975 50  0000 L CNN
+F 1 "TCRT5000" H 6125 1875 50  0000 L CNN
+F 2 "lib_fp:TCRT5000" H 6615 2149 50  0001 C CNN
+F 3 "" H 6615 2149 50  0001 C CNN
+	1    6375 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R1
+U 1 1 5C717FA3
+P 4850 1175
+F 0 "R1" H 4700 1225 50  0000 L CNN
+F 1 "220" H 4600 1125 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 4890 1165 50  0001 C CNN
+F 3 "" H 4850 1175 50  0001 C CNN
+	1    4850 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R5
+U 1 1 5C717FAA
+P 5100 1175
+F 0 "R5" H 5168 1221 50  0000 L CNN
+F 1 "10k" H 5168 1130 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 5140 1165 50  0001 C CNN
+F 3 "" H 5100 1175 50  0001 C CNN
+	1    5100 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R7
+U 1 1 5C717FB1
+P 5425 1425
+F 0 "R7" V 5350 1425 50  0000 C CNN
+F 1 "22k" V 5525 1425 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 5465 1415 50  0001 C CNN
+F 3 "" H 5425 1425 50  0001 C CNN
+	1    5425 1425
+	0    1    1    0   
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C1
+U 1 1 5C717FB8
+P 5625 1675
+F 0 "C1" H 5425 1700 50  0000 L CNN
+F 1 "0.1u" H 5425 1600 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 5663 1525 50  0001 C CNN
+F 3 "" H 5625 1675 50  0001 C CNN
+	1    5625 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5C717FBF
+P 5625 1900
+F 0 "#PWR0103" H 5625 1650 50  0001 C CNN
+F 1 "GND" H 5700 1750 50  0001 C CNN
+F 2 "" H 5625 1900 50  0001 C CNN
+F 3 "" H 5625 1900 50  0001 C CNN
+	1    5625 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1325 4850 1525
+$Comp
+L power:GND #PWR0104
+U 1 1 5C717FD5
+P 5100 2075
+F 0 "#PWR0104" H 5100 1825 50  0001 C CNN
+F 1 "GND" H 5105 1902 50  0001 C CNN
+F 2 "" H 5100 2075 50  0001 C CNN
+F 3 "" H 5100 2075 50  0001 C CNN
+	1    5100 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 1425 5625 1425
+Wire Wire Line
+	5625 1425 5625 1525
+Wire Wire Line
+	5100 1325 5100 1425
+Wire Wire Line
+	5275 1425 5100 1425
+Connection ~ 5100 1425
+Wire Wire Line
+	5100 1425 5100 1525
+Wire Notes Line
+	5300 1275 5300 2150
+Wire Notes Line
+	5300 2150 5800 2150
+Wire Notes Line
+	5800 2150 5800 1275
+Wire Notes Line
+	5300 1275 5800 1275
+Wire Wire Line
+	5625 1825 5625 1900
+Text Notes 5325 2125 0    31   ~ 0
+*LP Filter\n72 Hz
+Wire Wire Line
+	5625 1425 5875 1425
+Connection ~ 5625 1425
+$Comp
+L EduRoMAA-EduCIAA-rescue:TCST1103-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue U3
+U 1 1 5C718811
+P 900 6425
+F 0 "U3" H 1178 6350 23  0000 L CNN
+F 1 "TCST1103" H 1178 6301 23  0000 L CNN
+F 2 "lib_fp:TCST1103" H 900 6425 23  0001 C CNN
+F 3 "" H 900 6425 23  0001 C CNN
+	1    900  6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R3
+U 1 1 5C71891A
+P 800 6025
+F 0 "R3" H 900 6075 50  0000 L CNN
+F 1 "220" H 900 5975 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 840 6015 50  0001 C CNN
+F 3 "" H 800 6025 50  0001 C CNN
+	1    800  6025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C71AA15
+P 1650 6875
+F 0 "#PWR0108" H 1650 6625 50  0001 C CNN
+F 1 "GND" H 1655 6702 50  0001 C CNN
+F 2 "" H 1650 6875 50  0001 C CNN
+F 3 "" H 1650 6875 50  0001 C CNN
+	1    1650 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R9
+U 1 1 5C71AA81
+P 1650 6525
+F 0 "R9" H 1718 6571 50  0000 L CNN
+F 1 "10k" H 1718 6480 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 1690 6515 50  0001 C CNN
+F 3 "" H 1650 6525 50  0001 C CNN
+	1    1650 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5C71B227
+P 2450 6875
+F 0 "#PWR0109" H 2450 6625 50  0001 C CNN
+F 1 "GND" H 2455 6702 50  0001 C CNN
+F 2 "" H 2450 6875 50  0001 C CNN
+F 3 "" H 2450 6875 50  0001 C CNN
+	1    2450 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R11
+U 1 1 5C71B22D
+P 2450 6525
+F 0 "R11" H 2518 6571 50  0000 L CNN
+F 1 "10k" H 2518 6480 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 2490 6515 50  0001 C CNN
+F 3 "" H 2450 6525 50  0001 C CNN
+	1    2450 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5C71B7DA
+P 2050 6875
+F 0 "#PWR0110" H 2050 6625 50  0001 C CNN
+F 1 "GND" H 2055 6702 50  0001 C CNN
+F 2 "" H 2050 6875 50  0001 C CNN
+F 3 "" H 2050 6875 50  0001 C CNN
+	1    2050 6875
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C3
+U 1 1 5C71BD96
+P 2050 6525
+F 0 "C3" H 2165 6571 50  0000 L CNN
+F 1 "0.1u" H 2165 6480 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 2088 6375 50  0001 C CNN
+F 3 "" H 2050 6525 50  0001 C CNN
+	1    2050 6525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6275 800  6175
+Wire Wire Line
+	1100 6775 1100 6875
+Wire Wire Line
+	1650 6675 1650 6875
+Wire Wire Line
+	2450 6675 2450 6875
+Wire Wire Line
+	1100 6275 1100 6225
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R10
+U 1 1 5C721589
+P 2450 5825
+F 0 "R10" H 2518 5871 50  0000 L CNN
+F 1 "10k" H 2518 5780 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 2490 5815 50  0001 C CNN
+F 3 "" H 2450 5825 50  0001 C CNN
+	1    2450 5825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 6025 2450 6025
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R14
+U 1 1 5C722C37
+P 3400 5825
+F 0 "R14" H 3468 5871 50  0000 L CNN
+F 1 "10k" H 3468 5780 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 3440 5815 50  0001 C CNN
+F 3 "" H 3400 5825 50  0001 C CNN
+	1    3400 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0111
+U 1 1 5C723914
+P 2450 5575
+F 0 "#PWR0111" H 2450 5425 50  0001 C CNN
+F 1 "+5V" H 2465 5748 50  0000 C CNN
+F 2 "" H 2450 5575 50  0001 C CNN
+F 3 "" H 2450 5575 50  0001 C CNN
+	1    2450 5575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5C7245ED
+P 3400 5575
+F 0 "#PWR0112" H 3400 5425 50  0001 C CNN
+F 1 "+5V" H 3415 5748 50  0000 C CNN
+F 2 "" H 3400 5575 50  0001 C CNN
+F 3 "" H 3400 5575 50  0001 C CNN
+	1    3400 5575
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 6125 2    50   Output ~ 0
+Encoder_Izq
+$Comp
+L EduRoMAA-EduCIAA-rescue:TCST1103-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue U5
+U 1 1 5C72AA33
+P 5125 6450
+F 0 "U5" H 5403 6375 23  0000 L CNN
+F 1 "TCST1103" H 5403 6326 23  0000 L CNN
+F 2 "lib_fp:TCST1103" H 5125 6450 23  0001 C CNN
+F 3 "" H 5125 6450 23  0001 C CNN
+	1    5125 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R16
+U 1 1 5C72AA3A
+P 5025 6050
+F 0 "R16" H 4775 6150 50  0000 L CNN
+F 1 "220" H 4775 6050 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 5065 6040 50  0001 C CNN
+F 3 "" H 5025 6050 50  0001 C CNN
+	1    5025 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5C72AA53
+P 5875 6900
+F 0 "#PWR0114" H 5875 6650 50  0001 C CNN
+F 1 "GND" H 5880 6727 50  0001 C CNN
+F 2 "" H 5875 6900 50  0001 C CNN
+F 3 "" H 5875 6900 50  0001 C CNN
+	1    5875 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R19
+U 1 1 5C72AA59
+P 5875 6550
+F 0 "R19" H 5943 6596 50  0000 L CNN
+F 1 "10k" H 5943 6505 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 5915 6540 50  0001 C CNN
+F 3 "" H 5875 6550 50  0001 C CNN
+	1    5875 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5C72AA60
+P 6675 6900
+F 0 "#PWR0115" H 6675 6650 50  0001 C CNN
+F 1 "GND" H 6680 6727 50  0001 C CNN
+F 2 "" H 6675 6900 50  0001 C CNN
+F 3 "" H 6675 6900 50  0001 C CNN
+	1    6675 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R21
+U 1 1 5C72AA66
+P 6675 6550
+F 0 "R21" H 6743 6596 50  0000 L CNN
+F 1 "10k" H 6743 6505 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 6715 6540 50  0001 C CNN
+F 3 "" H 6675 6550 50  0001 C CNN
+	1    6675 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5C72AA6D
+P 6275 6900
+F 0 "#PWR0116" H 6275 6650 50  0001 C CNN
+F 1 "GND" H 6280 6727 50  0001 C CNN
+F 2 "" H 6275 6900 50  0001 C CNN
+F 3 "" H 6275 6900 50  0001 C CNN
+	1    6275 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C8
+U 1 1 5C72AA73
+P 6275 6550
+F 0 "C8" H 6390 6596 50  0000 L CNN
+F 1 "0.1u" H 6390 6505 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 6313 6400 50  0001 C CNN
+F 3 "" H 6275 6550 50  0001 C CNN
+	1    6275 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 6300 5025 6200
+Wire Wire Line
+	5025 6800 5025 6900
+Wire Wire Line
+	5325 6800 5325 6900
+Wire Wire Line
+	5875 6700 5875 6900
+Wire Wire Line
+	6675 6700 6675 6900
+Wire Wire Line
+	5325 6300 5325 6250
+Wire Wire Line
+	5325 6250 5875 6250
+Wire Wire Line
+	5875 6400 5875 6250
+Connection ~ 5875 6250
+Wire Wire Line
+	5875 6250 6275 6250
+Wire Wire Line
+	6275 6400 6275 6250
+Connection ~ 6275 6250
+Wire Wire Line
+	6275 6250 6875 6250
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R20
+U 1 1 5C72AA91
+P 6675 5850
+F 0 "R20" H 6743 5896 50  0000 L CNN
+F 1 "10k" H 6743 5805 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 6715 5840 50  0001 C CNN
+F 3 "" H 6675 5850 50  0001 C CNN
+	1    6675 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6875 6050 6675 6050
+Wire Wire Line
+	6675 6050 6675 6400
+$Comp
+L power:+5V #PWR0117
+U 1 1 5C72AAA3
+P 6675 5600
+F 0 "#PWR0117" H 6675 5450 50  0001 C CNN
+F 1 "+5V" H 6690 5773 50  0000 C CNN
+F 2 "" H 6675 5600 50  0001 C CNN
+F 3 "" H 6675 5600 50  0001 C CNN
+	1    6675 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7775 6150 2    50   Output ~ 0
+Encoder_Der
+$Comp
+L EduRoMAA-EduCIAA-rescue:Logo_CIII-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue Logo_1
+U 1 1 5C72C910
+P 750 7400
+F 0 "Logo_1" H 957 7376 23  0000 L CNN
+F 1 "Logo_CIII" H 957 7327 23  0000 L CNN
+F 2 "lib_fp:Logo_CIII_Small" H 750 7400 23  0001 C CNN
+F 3 "" H 750 7400 23  0001 C CNN
+	1    750  7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:MountingHole-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue MH1
+U 1 1 5C72CA61
+P 1300 7300
+F 0 "MH1" H 1400 7346 50  0000 L CNN
+F 1 "MountingHole" H 1400 7255 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_DIN965" H 1300 7300 50  0001 C CNN
+F 3 "" H 1300 7300 50  0001 C CNN
+	1    1300 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:MountingHole-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue MH2
+U 1 1 5C72CC05
+P 1300 7575
+F 0 "MH2" H 1400 7621 50  0000 L CNN
+F 1 "MountingHole" H 1400 7530 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_DIN965" H 1300 7575 50  0001 C CNN
+F 3 "" H 1300 7575 50  0001 C CNN
+	1    1300 7575
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:MountingHole-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue MH3
+U 1 1 5C72CC5D
+P 2050 7600
+F 0 "MH3" H 2150 7646 50  0000 L CNN
+F 1 "MountingHole" H 2150 7555 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_DIN965" H 2050 7600 50  0001 C CNN
+F 3 "" H 2050 7600 50  0001 C CNN
+	1    2050 7600
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 675  0    50   ~ 0
+Seguidor de linea\n
+$Comp
+L EduRoMAA-EduCIAA-rescue:LM393-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue U4
+U 3 1 5C73A9C3
+P 8700 5875
+F 0 "U4" H 8700 5575 50  0000 L CNN
+F 1 "LM393" H 8700 5475 50  0000 L CNN
+F 2 "lib_fp:DIP-8_W7.62mm_LongPads" H 8700 5875 50  0001 C CNN
+F 3 "" H 8700 5875 50  0001 C CNN
+	3    8700 5875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 5C73ACCF
+P 8600 5475
+F 0 "#PWR0119" H 8600 5325 50  0001 C CNN
+F 1 "+5V" H 8725 5550 50  0000 C CNN
+F 2 "" H 8600 5475 50  0001 C CNN
+F 3 "" H 8600 5475 50  0001 C CNN
+	1    8600 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 5C73ADE1
+P 8600 6275
+F 0 "#PWR0120" H 8600 6025 50  0001 C CNN
+F 1 "GND" H 8605 6102 50  0001 C CNN
+F 2 "" H 8600 6275 50  0001 C CNN
+F 3 "" H 8600 6275 50  0001 C CNN
+	1    8600 6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 5C74019F
+P 8350 5850
+F 0 "#PWR0121" H 8350 5600 50  0001 C CNN
+F 1 "GND" H 8355 5677 50  0001 C CNN
+F 2 "" H 8350 5850 50  0001 C CNN
+F 3 "" H 8350 5850 50  0001 C CNN
+	1    8350 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5475 8600 5525
+Wire Wire Line
+	2450 5575 2450 5675
+Wire Wire Line
+	6675 5600 6675 5700
+Text Notes 700  5400 0    50   ~ 0
+Encoder\n
+Text Notes 650  4325 0    50   ~ 0
+Buzzer\n\n
+Text GLabel 1100 4825 0    50   Input ~ 0
+Buzzer
+$Comp
+L EduRoMAA-EduCIAA-rescue:Buzzer-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue BZ1
+U 1 1 5C76E9C4
+P 2150 4475
+F 0 "BZ1" H 1750 4575 50  0000 L CNN
+F 1 "Buzzer" H 1750 4475 50  0000 L CNN
+F 2 "lib_fp:Buzzer_12x9.5RM7.6" V 2125 4575 50  0001 C CNN
+F 3 "" V 2125 4575 50  0001 C CNN
+	1    2150 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0122
+U 1 1 5C76EA90
+P 1950 4275
+F 0 "#PWR0122" H 1950 4125 50  0001 C CNN
+F 1 "+5V" H 1950 4425 50  0000 C CNN
+F 2 "" H 1950 4275 50  0001 C CNN
+F 3 "" H 1950 4275 50  0001 C CNN
+	1    1950 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R4
+U 1 1 5C76F077
+P 1400 4825
+F 0 "R4" V 1195 4825 50  0000 C CNN
+F 1 "1k" V 1286 4825 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 1440 4815 50  0001 C CNN
+F 3 "" H 1400 4825 50  0001 C CNN
+	1    1400 4825
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5C76F18B
+P 1950 5100
+F 0 "#PWR0123" H 1950 4850 50  0001 C CNN
+F 1 "GND" H 1955 4927 50  0001 C CNN
+F 2 "" H 1950 5100 50  0001 C CNN
+F 3 "" H 1950 5100 50  0001 C CNN
+	1    1950 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4825 1650 4825
+Wire Wire Line
+	1950 4375 1950 4275
+$Comp
+L power:+5V #PWR0124
+U 1 1 5C77A45C
+P 5525 6850
+F 0 "#PWR0124" H 5525 6700 50  0001 C CNN
+F 1 "+5V" H 5540 7023 50  0000 C CNN
+F 2 "" H 5525 6850 50  0001 C CNN
+F 3 "" H 5525 6850 50  0001 C CNN
+	1    5525 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 6900 5525 6850
+Wire Wire Line
+	5325 6900 5525 6900
+$Comp
+L power:+5V #PWR0125
+U 1 1 5C77CB3E
+P 1300 6825
+F 0 "#PWR0125" H 1300 6675 50  0001 C CNN
+F 1 "+5V" H 1315 6998 50  0000 C CNN
+F 2 "" H 1300 6825 50  0001 C CNN
+F 3 "" H 1300 6825 50  0001 C CNN
+	1    1300 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6875 1300 6825
+Wire Wire Line
+	1100 6875 1300 6875
+$Comp
+L EduRoMAA-EduCIAA-rescue:L293D-top_lib-ROBUC_v02_EduCiAA-rescue U6
+U 1 1 5C77FD99
+P 2325 1925
+F 0 "U6" H 1975 2875 50  0000 C CNN
+F 1 "L293D" H 2625 2875 50  0000 C CNN
+F 2 "lib_fp:DIP-16_W7.62mm_LongPads" H 2575 1175 50  0001 L CNN
+F 3 "" H 2025 2625 50  0001 C CNN
+	1    2325 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0126
+U 1 1 5C780547
+P 1050 800
+F 0 "#PWR0126" H 1050 650 50  0001 C CNN
+F 1 "+5V" H 1175 850 50  0000 C CNN
+F 2 "" H 1050 800 50  0001 C CNN
+F 3 "" H 1050 800 50  0001 C CNN
+	1    1050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 5C780554
+P 3050 1025
+F 0 "#PWR0127" H 3050 775 50  0001 C CNN
+F 1 "GND" H 3055 852 50  0001 C CNN
+F 2 "" H 3050 1025 50  0001 C CNN
+F 3 "" H 3050 1025 50  0001 C CNN
+	1    3050 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 5C78055A
+P 1500 1175
+F 0 "#PWR0128" H 1500 925 50  0001 C CNN
+F 1 "GND" H 1505 1002 50  0001 C CNN
+F 2 "" H 1500 1175 50  0001 C CNN
+F 3 "" H 1500 1175 50  0001 C CNN
+	1    1500 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:Conn_01x02-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue J2
+U 1 1 5C7997CB
+P 3450 1375
+F 0 "J2" H 3425 1500 50  0000 L CNN
+F 1 "Motor_Izq" V 3550 1200 50  0000 L CNN
+F 2 "lib_fp:HDRV2W64P254_1X2_508X254X864" H 3450 1375 50  0001 C CNN
+F 3 "" H 3450 1375 50  0001 C CNN
+	1    3450 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:Conn_01x02-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue J3
+U 1 1 5C79F996
+P 3450 1975
+F 0 "J3" H 3425 2075 50  0000 L CNN
+F 1 "Motor_Der" V 3550 1800 50  0000 L CNN
+F 2 "lib_fp:HDRV2W64P254_1X2_508X254X864" H 3450 1975 50  0001 C CNN
+F 3 "" H 3450 1975 50  0001 C CNN
+	1    3450 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R13
+U 1 1 5C7D0CC6
+P 1525 2550
+F 0 "R13" H 1325 2625 50  0000 L CNN
+F 1 "10k" H 1325 2550 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 1565 2540 50  0001 C CNN
+F 3 "" H 1525 2550 50  0001 C CNN
+	1    1525 2550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 2325 0    50   Input ~ 0
+ENABLE_Motors
+Text GLabel 925  1925 0    50   Input ~ 0
+PWM_Der
+Text Label 1475 1525 2    50   ~ 0
+B_1
+Text Label 1550 1525 0    50   ~ 0
+C_1
+Text Label 1475 2125 2    50   ~ 0
+B_2
+Text Label 1550 2125 0    50   ~ 0
+C_2
+Text Label 2125 3350 2    50   ~ 0
+C_1
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R17
+U 1 1 5C770787
+P 2450 3600
+F 0 "R17" V 2245 3600 50  0000 C CNN
+F 1 "1k" V 2336 3600 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 2490 3590 50  0001 C CNN
+F 3 "" H 2450 3600 50  0001 C CNN
+	1    2450 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5C7707A2
+P 2975 3875
+F 0 "#PWR0134" H 2975 3625 50  0001 C CNN
+F 1 "GND" H 2980 3702 50  0001 C CNN
+F 2 "" H 2975 3875 50  0001 C CNN
+F 3 "" H 2975 3875 50  0001 C CNN
+	1    2975 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3600 2100 3600
+Text Label 2100 3600 0    50   ~ 0
+B_2
+Text Label 3350 3325 2    50   ~ 0
+C_2
+Text Notes 3550 4150 2    50   ~ 0
+*Tabla de verdad l293d
+Text Notes 2800 4300 2    50   ~ 0
+EN
+Text Notes 2950 4300 2    50   ~ 0
+1A
+Text Notes 3100 4300 2    50   ~ 0
+2A
+Text Notes 3450 4300 2    50   ~ 0
+Función
+Text Notes 2775 4425 2    50   ~ 0
+H
+Text Notes 2925 4425 2    50   ~ 0
+L
+Text Notes 3075 4425 2    50   ~ 0
+H
+Text Notes 3475 4425 2    50   ~ 0
+Derecha
+Text Notes 2775 4550 2    50   ~ 0
+H
+Text Notes 2925 4550 2    50   ~ 0
+H
+Text Notes 3075 4550 2    50   ~ 0
+L
+Text Notes 3500 4550 2    50   ~ 0
+\nIzquierda
+Text Notes 2775 4675 2    50   ~ 0
+H
+Text Notes 2925 4675 2    50   ~ 0
+H
+Text Notes 3075 4675 2    50   ~ 0
+H
+Text Notes 3400 4675 2    50   ~ 0
+Stop
+Text Notes 2775 4800 2    50   ~ 0
+H
+Text Notes 2925 4800 2    50   ~ 0
+L
+Text Notes 3075 4800 2    50   ~ 0
+L
+Text Notes 3400 4800 2    50   ~ 0
+Stop
+Text Notes 2775 4925 2    50   ~ 0
+L
+Text Notes 2925 4925 2    50   ~ 0
+X
+Text Notes 3075 4925 2    50   ~ 0
+X
+Text Notes 3350 4925 2    50   ~ 0
+Z
+Wire Notes Line
+	2675 4200 2675 4950
+Wire Notes Line
+	3125 4200 3125 4950
+Wire Notes Line
+	2975 4200 2975 4950
+Wire Notes Line
+	2825 4200 2825 4950
+Text Notes 2700 5150 0    31   ~ 0
+*De la misma manera con 3A y 4A\n*X = No importa\n*Z = Alta impedancia
+Text Notes 650  675  0    50   ~ 0
+LLave H 
+Text Notes 2875 7275 0    50   ~ 0
+Entrada de alimentación
+$Comp
+L EduRoMAA-EduCIAA-rescue:MountingHole-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue MH4
+U 1 1 5C83BCDA
+P 2050 7300
+F 0 "MH4" H 2150 7346 50  0000 L CNN
+F 1 "MountingHole" H 2150 7255 50  0000 L CNN
+F 2 "lib_fp:MountingHole_3.2mm_M3_DIN965" H 2050 7300 50  0001 C CNN
+F 3 "" H 2050 7300 50  0001 C CNN
+	1    2050 7300
+	1    0    0    -1  
+$EndComp
+Text Notes 650  7250 0    50   ~ 0
+Accesorios
+$Comp
+L EduRoMAA-EduCIAA-rescue:Conn_01x02-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue J1
+U 1 1 5C85C8F0
+P 3225 7400
+F 0 "J1" H 3325 7350 50  0000 C CNN
+F 1 "DC_IN" H 3225 7500 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 3225 7400 50  0001 C CNN
+F 3 "" H 3225 7400 50  0001 C CNN
+	1    3225 7400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5C85CBB0
+P 4325 7625
+F 0 "#PWR0135" H 4325 7375 50  0001 C CNN
+F 1 "GND" H 4330 7452 50  0001 C CNN
+F 2 "" H 4325 7625 50  0001 C CNN
+F 3 "" H 4325 7625 50  0001 C CNN
+	1    4325 7625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C6
+U 1 1 5C85D096
+P 3675 7450
+F 0 "C6" H 3766 7496 50  0000 L CNN
+F 1 "10u" H 3766 7405 50  0000 L CNN
+F 2 "lib_fp:CP_Radial_D4.0mm_P2.00mm" H 3675 7450 50  0001 C CNN
+F 3 "~" H 3675 7450 50  0001 C CNN
+	1    3675 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0136
+U 1 1 5C85D6F0
+P 4325 7275
+F 0 "#PWR0136" H 4325 7125 50  0001 C CNN
+F 1 "+5V" H 4200 7325 50  0000 C CNN
+F 2 "" H 4325 7275 50  0001 C CNN
+F 3 "" H 4325 7275 50  0001 C CNN
+	1    4325 7275
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C_Small-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C7
+U 1 1 5C85DCEC
+P 4025 7450
+F 0 "C7" H 4117 7496 50  0000 L CNN
+F 1 "0.1u" H 4117 7405 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 4025 7450 50  0001 C CNN
+F 3 "" H 4025 7450 50  0001 C CNN
+	1    4025 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C_Small-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C5
+U 1 1 5C878E3D
+P 1500 1025
+F 0 "C5" H 1592 1071 50  0000 L CNN
+F 1 "0.1u" H 1592 980 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 1500 1025 50  0001 C CNN
+F 3 "" H 1500 1025 50  0001 C CNN
+	1    1500 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C4
+U 1 1 5C878FD3
+P 3050 875
+F 0 "C4" H 2850 925 50  0000 L CNN
+F 1 "10u" H 2800 825 50  0000 L CNN
+F 2 "lib_fp:CP_Radial_D4.0mm_P2.00mm" H 3050 875 50  0001 C CNN
+F 3 "~" H 3050 875 50  0001 C CNN
+	1    3050 875 
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	550  7150 550  7750
+Text Notes 9525 1425 0    50   ~ 0
+Bumper
+$Comp
+L EduRoMAA-EduCIAA-rescue:SW_Push-top_lib-ROBUC_v02_EduCiAA-rescue SW1
+U 1 1 5C8CA217
+P 9500 1650
+F 0 "SW1" H 9700 1750 50  0000 R CNN
+F 1 "SW_Push" H 9650 1550 50  0001 R CNN
+F 2 "lib_fp:HDRV2W64P254_1X2_508X254X864" H 9500 1850 50  0001 C CNN
+F 3 "" H 9500 1850 50  0001 C CNN
+	1    9500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R23
+U 1 1 5C8D17F3
+P 10600 1925
+F 0 "R23" H 10400 1975 50  0000 L CNN
+F 1 "22k" H 10400 1875 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 10640 1915 50  0001 C CNN
+F 3 "" H 10600 1925 50  0001 C CNN
+	1    10600 1925
+	-1   0    0    1   
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R25
+U 1 1 5C8D1947
+P 10050 1650
+F 0 "R25" V 9950 1650 50  0000 C CNN
+F 1 "10k" V 10150 1650 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 10090 1640 50  0001 C CNN
+F 3 "" H 10050 1650 50  0001 C CNN
+	1    10050 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C9
+U 1 1 5C8D2136
+P 10300 1900
+F 0 "C9" H 10415 1946 50  0000 L CNN
+F 1 "0.1u" H 10415 1855 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 10338 1750 50  0001 C CNN
+F 3 "" H 10300 1900 50  0001 C CNN
+	1    10300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1650 10300 1650
+Wire Wire Line
+	10300 1650 10300 1750
+Connection ~ 10300 1650
+$Comp
+L power:GND #PWR0137
+U 1 1 5C8FEA6F
+P 10600 2175
+F 0 "#PWR0137" H 10600 1925 50  0001 C CNN
+F 1 "GND" H 10605 2002 50  0001 C CNN
+F 2 "" H 10600 2175 50  0001 C CNN
+F 3 "" H 10600 2175 50  0001 C CNN
+	1    10600 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5C90674E
+P 10300 2150
+F 0 "#PWR0138" H 10300 1900 50  0001 C CNN
+F 1 "GND" H 10305 1977 50  0001 C CNN
+F 2 "" H 10300 2150 50  0001 C CNN
+F 3 "" H 10300 2150 50  0001 C CNN
+	1    10300 2150
+	1    0    0    -1  
+$EndComp
+Text GLabel 10625 1650 2    50   Output ~ 0
+Bumper_Izq
+Wire Wire Line
+	10300 2150 10300 2050
+Wire Notes Line
+	6900 7150 6900 7750
+Wire Wire Line
+	3425 7400 3475 7400
+Wire Wire Line
+	3475 7400 3475 7300
+Wire Wire Line
+	3475 7300 3675 7300
+Wire Wire Line
+	3425 7500 3475 7500
+Wire Wire Line
+	3475 7500 3475 7600
+Wire Wire Line
+	3475 7600 3675 7600
+Wire Wire Line
+	3675 7550 3675 7600
+Connection ~ 3675 7600
+Wire Wire Line
+	3675 7600 4025 7600
+Wire Wire Line
+	4025 7550 4025 7600
+Connection ~ 4025 7600
+Wire Wire Line
+	3675 7350 3675 7300
+Connection ~ 3675 7300
+Wire Wire Line
+	3675 7300 4025 7300
+Wire Wire Line
+	4025 7350 4025 7300
+Connection ~ 4025 7300
+$Comp
+L power:+5V #PWR0139
+U 1 1 5CBA12C5
+P 9250 1550
+F 0 "#PWR0139" H 9250 1400 50  0001 C CNN
+F 1 "+5V" H 9265 1723 50  0000 C CNN
+F 2 "" H 9250 1550 50  0001 C CNN
+F 3 "" H 9250 1550 50  0001 C CNN
+	1    9250 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 2075 10600 2175
+Wire Wire Line
+	9250 1550 9250 1650
+Wire Wire Line
+	9250 1650 9300 1650
+$Comp
+L EduRoMAA-EduCIAA-rescue:SW_Push-top_lib-ROBUC_v02_EduCiAA-rescue SW2
+U 1 1 5CBCF246
+P 9325 2425
+F 0 "SW2" H 9525 2525 50  0000 R CNN
+F 1 "SW_Push" H 9475 2325 50  0001 R CNN
+F 2 "lib_fp:HDRV2W64P254_1X2_508X254X864" H 9325 2625 50  0001 C CNN
+F 3 "" H 9325 2625 50  0001 C CNN
+	1    9325 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R24
+U 1 1 5CBCF24D
+P 10600 2675
+F 0 "R24" H 10400 2725 50  0000 L CNN
+F 1 "22k" H 10400 2625 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 10640 2665 50  0001 C CNN
+F 3 "" H 10600 2675 50  0001 C CNN
+	1    10600 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R26
+U 1 1 5CBCF254
+P 9875 2425
+F 0 "R26" V 9775 2425 50  0000 C CNN
+F 1 "10k" V 9975 2425 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 9915 2415 50  0001 C CNN
+F 3 "" H 9875 2425 50  0001 C CNN
+	1    9875 2425
+	0    1    1    0   
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C10
+U 1 1 5CBCF25B
+P 10125 2675
+F 0 "C10" H 10240 2721 50  0000 L CNN
+F 1 "0.1u" H 10240 2630 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 10163 2525 50  0001 C CNN
+F 3 "" H 10125 2675 50  0001 C CNN
+	1    10125 2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10025 2425 10125 2425
+Wire Wire Line
+	10125 2425 10125 2525
+Connection ~ 10125 2425
+$Comp
+L power:GND #PWR0140
+U 1 1 5CBCF268
+P 10600 2925
+F 0 "#PWR0140" H 10600 2675 50  0001 C CNN
+F 1 "GND" H 10605 2752 50  0001 C CNN
+F 2 "" H 10600 2925 50  0001 C CNN
+F 3 "" H 10600 2925 50  0001 C CNN
+	1    10600 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0141
+U 1 1 5CBCF26E
+P 10125 2925
+F 0 "#PWR0141" H 10125 2675 50  0001 C CNN
+F 1 "GND" H 10130 2752 50  0001 C CNN
+F 2 "" H 10125 2925 50  0001 C CNN
+F 3 "" H 10125 2925 50  0001 C CNN
+	1    10125 2925
+	1    0    0    -1  
+$EndComp
+Text GLabel 10650 2425 2    50   Output ~ 0
+Bumper_Der
+Wire Wire Line
+	10125 2925 10125 2825
+$Comp
+L power:+5V #PWR0142
+U 1 1 5CBCF278
+P 9075 2325
+F 0 "#PWR0142" H 9075 2175 50  0001 C CNN
+F 1 "+5V" H 9090 2498 50  0000 C CNN
+F 2 "" H 9075 2325 50  0001 C CNN
+F 3 "" H 9075 2325 50  0001 C CNN
+	1    9075 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 2825 10600 2925
+Wire Wire Line
+	9075 2325 9075 2425
+Wire Wire Line
+	9075 2425 9125 2425
+$Comp
+L Device:CP1_Small C11
+U 1 1 5CC3E04E
+P 8350 5675
+F 0 "C11" H 8100 5675 50  0000 L CNN
+F 1 "10u" H 8125 5600 50  0000 L CNN
+F 2 "lib_fp:CP_Radial_D4.0mm_P2.00mm" H 8350 5675 50  0001 C CNN
+F 3 "~" H 8350 5675 50  0001 C CNN
+	1    8350 5675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5525 8600 5525
+Connection ~ 8600 5525
+Wire Wire Line
+	8600 5525 8600 5575
+Wire Wire Line
+	8350 5575 8350 5525
+Wire Wire Line
+	8350 5775 8350 5850
+$Comp
+L EduRoMAA-EduCIAA-rescue:C_Small-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C12
+U 1 1 5CC76923
+P 8850 5700
+F 0 "C12" H 8942 5746 50  0000 L CNN
+F 1 "0.1u" H 8942 5655 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 8850 5700 50  0001 C CNN
+F 3 "" H 8850 5700 50  0001 C CNN
+	1    8850 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5525 8850 5525
+Wire Wire Line
+	8850 5600 8850 5525
+Text GLabel 10075 3850 0    50   Input ~ 0
+Encoder_Izq
+Text GLabel 10075 3650 0    50   Input ~ 0
+Bumper_Izq
+Text GLabel 10075 3750 0    50   Input ~ 0
+Bumper_Der
+Wire Wire Line
+	800  6875 800  6775
+Wire Wire Line
+	2050 6675 2050 6875
+Wire Wire Line
+	2325 2875 2325 2825
+Connection ~ 2325 2825
+$Comp
+L power:GND #PWR0102
+U 1 1 5C8271C2
+P 6775 2075
+F 0 "#PWR0102" H 6775 1825 50  0001 C CNN
+F 1 "GND" H 6780 1902 50  0001 C CNN
+F 2 "" H 6775 2075 50  0001 C CNN
+F 3 "" H 6775 2075 50  0001 C CNN
+	1    6775 2075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6275 6700 6275 6900
+Wire Wire Line
+	8850 5800 8850 5875
+$Comp
+L power:GND #PWR0143
+U 1 1 5CC893E6
+P 8850 5875
+F 0 "#PWR0143" H 8850 5625 50  0001 C CNN
+F 1 "GND" H 8855 5702 50  0001 C CNN
+F 2 "" H 8850 5875 50  0001 C CNN
+F 3 "" H 8850 5875 50  0001 C CNN
+	1    8850 5875
+	1    0    0    -1  
+$EndComp
+Text Notes 5050 7350 0    50   ~ 0
+Alimentación \n  EduCIAA
+$Comp
+L EduRoMAA-EduCIAA-rescue:Conn_01x02-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue J6
+U 1 1 5C77530B
+P 6700 7400
+F 0 "J6" H 6700 7200 50  0000 C CNN
+F 1 "DC_OUT" H 6700 7500 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 6700 7400 50  0001 C CNN
+F 3 "" H 6700 7400 50  0001 C CNN
+	1    6700 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5C775312
+P 5600 7600
+F 0 "#PWR0146" H 5600 7350 50  0001 C CNN
+F 1 "GND" H 5605 7427 50  0001 C CNN
+F 2 "" H 5600 7600 50  0001 C CNN
+F 3 "" H 5600 7600 50  0001 C CNN
+	1    5600 7600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C14
+U 1 1 5C775318
+P 6250 7450
+F 0 "C14" H 6341 7496 50  0000 L CNN
+F 1 "100u" H 6341 7405 50  0000 L CNN
+F 2 "lib_fp:CP_Radial_D4.0mm_P2.00mm" H 6250 7450 50  0001 C CNN
+F 3 "~" H 6250 7450 50  0001 C CNN
+	1    6250 7450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0147
+U 1 1 5C77531F
+P 5600 7300
+F 0 "#PWR0147" H 5600 7150 50  0001 C CNN
+F 1 "+5V" H 5500 7400 50  0000 C CNN
+F 2 "" H 5600 7300 50  0001 C CNN
+F 3 "" H 5600 7300 50  0001 C CNN
+	1    5600 7300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:C_Small-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue C13
+U 1 1 5C775325
+P 5900 7450
+F 0 "C13" H 5992 7496 50  0000 L CNN
+F 1 "0.1u" H 5992 7405 50  0000 L CNN
+F 2 "lib_fp:C_Disc_D6_P5" H 5900 7450 50  0001 C CNN
+F 3 "" H 5900 7450 50  0001 C CNN
+	1    5900 7450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 7400 6450 7400
+Wire Wire Line
+	6450 7400 6450 7300
+Wire Wire Line
+	6450 7300 6250 7300
+Wire Wire Line
+	6500 7500 6450 7500
+Wire Wire Line
+	6450 7500 6450 7600
+Wire Wire Line
+	6450 7600 6250 7600
+Wire Wire Line
+	6250 7550 6250 7600
+Connection ~ 6250 7600
+Wire Wire Line
+	6250 7600 5900 7600
+Wire Wire Line
+	5900 7550 5900 7600
+Connection ~ 5900 7600
+Wire Wire Line
+	5900 7600 5600 7600
+Wire Wire Line
+	6250 7350 6250 7300
+Connection ~ 6250 7300
+Wire Wire Line
+	6250 7300 5900 7300
+Wire Wire Line
+	5900 7350 5900 7300
+Connection ~ 5900 7300
+Wire Wire Line
+	5900 7300 5600 7300
+Wire Wire Line
+	4025 7300 4325 7300
+Wire Wire Line
+	4325 7275 4325 7300
+Wire Wire Line
+	4025 7600 4325 7600
+Wire Wire Line
+	4325 7600 4325 7625
+Text Notes 4050 3925 2    50   ~ 0
+Sonar
+Text Notes 7125 4475 2    50   ~ 0
+VCC
+Text Notes 7125 4575 2    50   ~ 0
+Trig
+Text Notes 7125 4675 2    50   ~ 0
+Echo
+Text Notes 7125 4775 2    50   ~ 0
+GND
+Text Notes 4200 2450 2    50   ~ 0
+Bluetooth
+Text Notes 7175 3000 2    50   ~ 0
+VCC
+Text Notes 7175 3100 2    50   ~ 0
+GND
+Text Notes 7150 3200 2    50   ~ 0
+Tx
+Text Notes 7150 3300 2    50   ~ 0
+Rx
+Text GLabel 6625 3150 0    50   Input ~ 0
+Bluetooth_Tx
+Text GLabel 6625 3250 0    50   Input ~ 0
+Bluetooth_Rx
+Text GLabel 8225 3850 0    50   Input ~ 0
+Bluetooth_Tx
+Text GLabel 6500 4550 0    50   Input ~ 0
+Sonar_Trig
+Text GLabel 6500 4650 0    50   Input ~ 0
+Sonar_Echo
+$Comp
+L EduRoMAA-EduCIAA-rescue:LM393-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue U4
+U 1 1 5C71BEAC
+P 2950 6125
+F 0 "U4" H 2950 6492 50  0000 C CNN
+F 1 "LM393" H 2950 6401 50  0000 C CNN
+F 2 "lib_fp:DIP-8_W7.62mm_LongPads" H 2950 6125 50  0001 C CNN
+F 3 "" H 2950 6125 50  0001 C CNN
+	1    2950 6125
+	1    0    0    -1  
+$EndComp
+Text GLabel 10075 4150 0    50   Input ~ 0
+Sonar_Trig
+Text GLabel 10075 4250 0    50   Input ~ 0
+Sonar_Echo
+$Comp
+L power:GND #PWR06
+U 1 1 5C9F9FC3
+P 10200 3550
+F 0 "#PWR06" H 10200 3300 50  0001 C CNN
+F 1 "GND" H 10205 3377 50  0001 C CNN
+F 2 "" H 10200 3550 50  0001 C CNN
+F 3 "" H 10200 3550 50  0001 C CNN
+	1    10200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5CB710E3
+P 6625 5075
+F 0 "#PWR03" H 6625 4825 50  0001 C CNN
+F 1 "GND" H 6630 4902 50  0001 C CNN
+F 2 "" H 6625 5075 50  0001 C CNN
+F 3 "" H 6625 5075 50  0001 C CNN
+	1    6625 5075
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 2325 1525 2400
+$Comp
+L power:GND #PWR07
+U 1 1 5CC1C37F
+P 1525 2775
+F 0 "#PWR07" H 1525 2525 50  0001 C CNN
+F 1 "GND" H 1530 2602 50  0001 C CNN
+F 2 "" H 1525 2775 50  0001 C CNN
+F 3 "" H 1525 2775 50  0001 C CNN
+	1    1525 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 2125 1550 2125
+Wire Wire Line
+	1475 2125 1300 2125
+Wire Wire Line
+	1300 2125 1300 1925
+Connection ~ 1300 1925
+Wire Wire Line
+	1300 1925 1825 1925
+Wire Wire Line
+	1550 1525 1825 1525
+Wire Wire Line
+	1475 1525 1300 1525
+Wire Wire Line
+	1300 1525 1300 1325
+Connection ~ 1300 1325
+Wire Wire Line
+	1300 1325 1825 1325
+Wire Wire Line
+	2925 1325 2925 1375
+Wire Wire Line
+	2825 1325 2925 1325
+Wire Wire Line
+	2925 1475 2925 1525
+Wire Wire Line
+	2925 1525 2825 1525
+Wire Wire Line
+	2825 1925 2925 1925
+Wire Wire Line
+	2925 1925 2925 1975
+Wire Wire Line
+	2925 2075 2925 2125
+Wire Wire Line
+	2925 2125 2825 2125
+Wire Wire Line
+	2125 2825 2225 2825
+Wire Wire Line
+	2325 2825 2425 2825
+Wire Wire Line
+	2525 2725 2525 2825
+Wire Wire Line
+	2125 2725 2125 2825
+Wire Wire Line
+	2225 2725 2225 2825
+Connection ~ 2225 2825
+Wire Wire Line
+	2225 2825 2325 2825
+Wire Wire Line
+	2425 2725 2425 2825
+Connection ~ 2425 2825
+Wire Wire Line
+	2425 2825 2525 2825
+Wire Wire Line
+	2425 850  2425 900 
+Wire Wire Line
+	2225 925  2225 850 
+Wire Wire Line
+	1500 850  1500 925 
+Wire Wire Line
+	1500 850  2225 850 
+Wire Wire Line
+	3050 1025 3050 975 
+Wire Wire Line
+	1500 1175 1500 1125
+Wire Wire Line
+	2600 3600 2675 3600
+Wire Notes Line
+	3525 4200 3525 4950
+Wire Notes Line
+	3525 4950 2675 4950
+Wire Notes Line
+	2675 4825 3525 4825
+Wire Notes Line
+	2675 4700 3525 4700
+Wire Notes Line
+	2675 4575 3525 4575
+Wire Notes Line
+	2675 4450 3525 4450
+Wire Notes Line
+	2675 4325 3525 4325
+Wire Notes Line
+	2675 4200 3525 4200
+Wire Notes Line
+	550  7150 2700 7150
+Wire Notes Line
+	2700 7150 2700 7750
+Wire Notes Line
+	2700 7750 550  7750
+Wire Notes Line
+	2775 7150 2775 7750
+Wire Notes Line
+	550  7100 6900 7100
+Wire Wire Line
+	3250 6125 3400 6125
+Wire Wire Line
+	3400 5975 3400 6125
+Connection ~ 3400 6125
+Wire Wire Line
+	3400 6125 3550 6125
+Wire Wire Line
+	2450 5975 2450 6025
+Connection ~ 2450 6025
+Wire Wire Line
+	2450 6025 2450 6375
+Wire Wire Line
+	1100 6225 1650 6225
+Connection ~ 1650 6225
+Wire Wire Line
+	1650 6375 1650 6225
+Wire Wire Line
+	2050 6225 2650 6225
+Wire Wire Line
+	1650 6225 2050 6225
+Connection ~ 2050 6225
+Wire Wire Line
+	2050 6375 2050 6225
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R22
+U 1 1 5CD128CA
+P 7625 5850
+F 0 "R22" H 7693 5896 50  0000 L CNN
+F 1 "10k" H 7693 5805 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 7665 5840 50  0001 C CNN
+F 3 "" H 7625 5850 50  0001 C CNN
+	1    7625 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 5CD128D1
+P 7625 5600
+F 0 "#PWR010" H 7625 5450 50  0001 C CNN
+F 1 "+5V" H 7640 5773 50  0000 C CNN
+F 2 "" H 7625 5600 50  0001 C CNN
+F 3 "" H 7625 5600 50  0001 C CNN
+	1    7625 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 5600 7625 5700
+Wire Wire Line
+	7625 6000 7625 6150
+Connection ~ 7625 6150
+Wire Wire Line
+	7625 6150 7775 6150
+Wire Wire Line
+	6675 6000 6675 6050
+Connection ~ 6675 6050
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R15
+U 1 1 5D23F722
+P 1750 3125
+F 0 "R15" H 1818 3171 50  0000 L CNN
+F 1 "10k" H 1818 3080 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 1790 3115 50  0001 C CNN
+F 3 "" H 1750 3125 50  0001 C CNN
+	1    1750 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 3800 2975 3875
+Wire Wire Line
+	3350 3325 2975 3325
+Wire Wire Line
+	2975 3325 2975 3400
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R18
+U 1 1 5D2CE689
+P 2975 3100
+F 0 "R18" H 3043 3146 50  0000 L CNN
+F 1 "10k" H 3043 3055 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 3015 3090 50  0001 C CNN
+F 3 "" H 2975 3100 50  0001 C CNN
+	1    2975 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 3250 2975 3325
+Connection ~ 2975 3325
+$Comp
+L power:+5V #PWR08
+U 1 1 5D2E0FBD
+P 1750 2900
+F 0 "#PWR08" H 1750 2750 50  0001 C CNN
+F 1 "+5V" H 1875 2950 50  0000 C CNN
+F 2 "" H 1750 2900 50  0001 C CNN
+F 3 "" H 1750 2900 50  0001 C CNN
+	1    1750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5D2E1304
+P 2975 2875
+F 0 "#PWR09" H 2975 2725 50  0001 C CNN
+F 1 "+5V" H 3100 2925 50  0000 C CNN
+F 2 "" H 2975 2875 50  0001 C CNN
+F 3 "" H 2975 2875 50  0001 C CNN
+	1    2975 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 2875 2975 2950
+Wire Wire Line
+	1750 2900 1750 2975
+Wire Wire Line
+	1525 2775 1525 2700
+$Comp
+L power:GND #PWR0129
+U 1 1 5C7A2F79
+P 2325 2875
+F 0 "#PWR0129" H 2325 2625 50  0001 C CNN
+F 1 "GND" H 2330 2702 50  0001 C CNN
+F 2 "" H 2325 2875 50  0001 C CNN
+F 3 "" H 2325 2875 50  0001 C CNN
+	1    2325 2875
+	1    0    0    -1  
+$EndComp
+Connection ~ 1525 2325
+Wire Wire Line
+	1525 2325 1825 2325
+Wire Wire Line
+	1525 1725 1825 1725
+Wire Wire Line
+	1525 1725 1525 2325
+Wire Notes Line
+	550  4025 550  550 
+$Comp
+L Device:R_US R29
+U 1 1 5CB9EB4D
+P 4600 3400
+F 0 "R29" H 4400 3450 50  0000 L CNN
+F 1 "10k" H 4350 3350 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 4640 3390 50  0001 C CNN
+F 3 "~" H 4600 3400 50  0001 C CNN
+	1    4600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5CB9F56F
+P 4750 3600
+F 0 "#PWR013" H 4750 3350 50  0001 C CNN
+F 1 "GND" H 4755 3427 50  0001 C CNN
+F 2 "" H 4750 3600 50  0001 C CNN
+F 3 "" H 4750 3600 50  0001 C CNN
+	1    4750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5CB9F60F
+P 4600 3600
+F 0 "#PWR012" H 4600 3350 50  0001 C CNN
+F 1 "GND" H 4605 3427 50  0001 C CNN
+F 2 "" H 4600 3600 50  0001 C CNN
+F 3 "" H 4600 3600 50  0001 C CNN
+	1    4600 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3550 4600 3600
+Wire Notes Line
+	550  7100 550  5300
+Wire Wire Line
+	1950 5025 1950 5100
+Wire Wire Line
+	1950 4575 1950 4625
+Wire Notes Line
+	550  4075 550  5250
+$Comp
+L power:+5V #PWR011
+U 1 1 5CE6C371
+P 4125 2600
+F 0 "#PWR011" H 4125 2450 50  0001 C CNN
+F 1 "+5V" H 4250 2675 50  0000 C CNN
+F 2 "" H 4125 2600 50  0001 C CNN
+F 3 "" H 4125 2600 50  0001 C CNN
+	1    4125 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R28
+U 1 1 5CE6C61F
+P 4375 2750
+F 0 "R28" V 4200 2750 50  0000 C CNN
+F 1 "10k" V 4275 2750 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 4415 2740 50  0001 C CNN
+F 3 "~" H 4375 2750 50  0001 C CNN
+	1    4375 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 2750 4650 2900
+Wire Wire Line
+	4650 3050 4800 3050
+Wire Wire Line
+	4650 2750 4800 2750
+Wire Wire Line
+	4800 2900 4650 2900
+Connection ~ 4650 2900
+Wire Wire Line
+	4650 2900 4650 3050
+Wire Wire Line
+	4600 3200 4600 3250
+Text GLabel 4475 3200 0    50   Input ~ 0
+Bluetooth_OnOff
+Wire Wire Line
+	4475 3200 4600 3200
+Wire Notes Line
+	3750 2300 7325 2300
+$Comp
+L power:GND #PWR016
+U 1 1 5D284DCA
+P 5550 3600
+F 0 "#PWR016" H 5550 3350 50  0001 C CNN
+F 1 "GND" H 5555 3427 50  0001 C CNN
+F 2 "" H 5550 3600 50  0001 C CNN
+F 3 "" H 5550 3600 50  0001 C CNN
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3200 4800 3200
+Connection ~ 4600 3200
+Wire Wire Line
+	5625 2900 5550 2900
+Wire Wire Line
+	5625 3000 5550 3000
+Wire Wire Line
+	5550 3050 5550 3600
+Wire Wire Line
+	6700 3150 6625 3150
+Wire Wire Line
+	6700 3250 6625 3250
+Wire Wire Line
+	4525 2750 4650 2750
+Connection ~ 4650 2750
+Wire Wire Line
+	4125 2750 4225 2750
+Wire Wire Line
+	6500 4550 6700 4550
+Wire Wire Line
+	6700 4650 6500 4650
+$Comp
+L EduRoMAA-EduCIAA-rescue:IRF7105-IRF7105-ROBUC_v02_EduCiAA-rescue U8
+U 1 1 5D5F4047
+P 5200 4450
+F 0 "U8" H 5400 4900 50  0000 C CNN
+F 1 "IRF7105" H 5050 4900 50  0000 C CNN
+F 2 "lib_fp:SOIC-8_3.9x4.9mm_P1.27mm" H 4675 4025 50  0001 C CNN
+F 3 "" H 4675 4025 50  0001 C CNN
+	1    5200 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R30
+U 1 1 5D5F404E
+P 4600 4900
+F 0 "R30" H 4400 4950 50  0000 L CNN
+F 1 "10k" H 4350 4850 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 4640 4890 50  0001 C CNN
+F 3 "~" H 4600 4900 50  0001 C CNN
+	1    4600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5D5F4055
+P 4750 5100
+F 0 "#PWR015" H 4750 4850 50  0001 C CNN
+F 1 "GND" H 4755 4927 50  0001 C CNN
+F 2 "" H 4750 5100 50  0001 C CNN
+F 3 "" H 4750 5100 50  0001 C CNN
+	1    4750 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D5F405B
+P 4600 5100
+F 0 "#PWR02" H 4600 4850 50  0001 C CNN
+F 1 "GND" H 4605 4927 50  0001 C CNN
+F 2 "" H 4600 5100 50  0001 C CNN
+F 3 "" H 4600 5100 50  0001 C CNN
+	1    4600 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4800 4800 4800
+Wire Wire Line
+	4600 5050 4600 5100
+$Comp
+L power:+5V #PWR01
+U 1 1 5D5F4063
+P 4125 4100
+F 0 "#PWR01" H 4125 3950 50  0001 C CNN
+F 1 "+5V" H 4250 4175 50  0000 C CNN
+F 2 "" H 4125 4100 50  0001 C CNN
+F 3 "" H 4125 4100 50  0001 C CNN
+	1    4125 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R27
+U 1 1 5D5F4069
+P 4375 4250
+F 0 "R27" V 4200 4250 50  0000 C CNN
+F 1 "10k" V 4275 4250 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 4415 4240 50  0001 C CNN
+F 3 "~" H 4375 4250 50  0001 C CNN
+	1    4375 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 4250 4650 4400
+Wire Wire Line
+	4650 4550 4800 4550
+Wire Wire Line
+	4650 4250 4800 4250
+Wire Wire Line
+	4800 4400 4650 4400
+Connection ~ 4650 4400
+Wire Wire Line
+	4650 4400 4650 4550
+Wire Wire Line
+	4600 4700 4600 4750
+Text GLabel 4475 4700 0    50   Input ~ 0
+Sonar_OnOff
+Wire Wire Line
+	4475 4700 4600 4700
+Wire Wire Line
+	4750 4800 4750 5100
+Wire Wire Line
+	4600 4700 4800 4700
+Connection ~ 4600 4700
+Wire Wire Line
+	5625 4400 5550 4400
+Wire Wire Line
+	5625 4500 5550 4500
+Wire Wire Line
+	4525 4250 4650 4250
+Connection ~ 4650 4250
+Wire Wire Line
+	4125 4250 4225 4250
+Wire Notes Line
+	3750 3750 7325 3750
+Wire Notes Line
+	3750 3750 3750 2300
+Wire Notes Line
+	3750 5250 7325 5250
+Wire Wire Line
+	5550 3050 6700 3050
+Wire Wire Line
+	5625 4400 5625 4450
+Wire Wire Line
+	5625 2950 6700 2950
+Connection ~ 5625 2950
+Wire Wire Line
+	5625 2950 5625 3000
+Wire Wire Line
+	5625 2900 5625 2950
+Wire Wire Line
+	5625 4450 6700 4450
+Connection ~ 5625 4450
+Wire Wire Line
+	5625 4450 5625 4500
+Wire Wire Line
+	6625 4750 6700 4750
+Wire Wire Line
+	6625 4750 6625 5075
+Wire Notes Line
+	7325 2300 7325 3750
+Wire Wire Line
+	2050 4375 1950 4375
+Wire Wire Line
+	2050 4575 1950 4575
+Wire Notes Line
+	550  550  3700 550 
+Wire Wire Line
+	2925 1975 3250 1975
+Wire Wire Line
+	2925 2075 3250 2075
+Wire Wire Line
+	2925 1475 3250 1475
+Wire Wire Line
+	2925 1375 3250 1375
+Wire Wire Line
+	925  1325 1300 1325
+Wire Wire Line
+	925  1925 1300 1925
+Wire Wire Line
+	1250 2325 1525 2325
+Wire Wire Line
+	800  5725 800  5875
+Wire Wire Line
+	5025 5750 5025 5900
+Wire Notes Line
+	9250 5300 9250 6475
+Wire Notes Line
+	550  5300 9250 5300
+Wire Notes Line
+	2450 4075 2450 5250
+Wire Notes Line
+	2450 5250 550  5250
+Wire Notes Line
+	550  4075 2450 4075
+Wire Notes Line
+	2500 4025 2500 5250
+Wire Notes Line
+	2500 5250 3700 5250
+Wire Notes Line
+	550  4025 2500 4025
+Wire Wire Line
+	4125 2600 4125 2750
+$Comp
+L power:+5V #PWR04
+U 1 1 5DCF03BC
+P 4650 2525
+F 0 "#PWR04" H 4650 2375 50  0001 C CNN
+F 1 "+5V" H 4650 2675 50  0000 C CNN
+F 2 "" H 4650 2525 50  0001 C CNN
+F 3 "" H 4650 2525 50  0001 C CNN
+	1    4650 2525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2525 4650 2650
+Wire Wire Line
+	4650 2650 4800 2650
+Wire Wire Line
+	4125 4100 4125 4250
+$Comp
+L power:+5V #PWR014
+U 1 1 5DD0A99E
+P 4650 4025
+F 0 "#PWR014" H 4650 3875 50  0001 C CNN
+F 1 "+5V" H 4650 4175 50  0000 C CNN
+F 2 "" H 4650 4025 50  0001 C CNN
+F 3 "" H 4650 4025 50  0001 C CNN
+	1    4650 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4025 4650 4150
+Wire Wire Line
+	4650 4150 4800 4150
+Wire Notes Line
+	3750 3800 7325 3800
+Wire Notes Line
+	3750 3800 3750 5250
+Wire Notes Line
+	7325 3800 7325 5250
+Wire Notes Line
+	7400 3175 7400 4600
+Wire Notes Line
+	7400 4600 11150 4600
+Wire Notes Line
+	11150 4600 11150 3175
+Wire Notes Line
+	11150 3175 7400 3175
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R31
+U 1 1 5DEE627E
+P 8575 5050
+F 0 "R31" V 8675 5000 50  0000 L CNN
+F 1 "1k" V 8475 5000 50  0000 L CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 8615 5040 50  0001 C CNN
+F 3 "" H 8575 5050 50  0001 C CNN
+	1    8575 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L EduRoMAA-EduCIAA-rescue:LED-top_lib-ROBUC_v02_EduCiAA-rescue D1
+U 1 1 5DEE6285
+P 7975 5050
+F 0 "D1" H 8000 4950 50  0000 R CNN
+F 1 "LED" H 8025 5175 50  0000 R CNN
+F 2 "lib_fp:PinHeader_1x02_P2.54mm_Vertical" H 7975 5050 50  0001 C CNN
+F 3 "" H 7975 5050 50  0001 C CNN
+	1    7975 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 5DF01104
+P 7550 4975
+F 0 "#PWR017" H 7550 4825 50  0001 C CNN
+F 1 "+5V" H 7675 5050 50  0000 C CNN
+F 2 "" H 7550 4975 50  0001 C CNN
+F 3 "" H 7550 4975 50  0001 C CNN
+	1    7550 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 5DF1B504
+P 9100 5100
+F 0 "#PWR018" H 9100 4850 50  0001 C CNN
+F 1 "GND" H 9105 4927 50  0001 C CNN
+F 2 "" H 9100 5100 50  0001 C CNN
+F 3 "" H 9100 5100 50  0001 C CNN
+	1    9100 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5050 7825 5050
+Wire Wire Line
+	7550 4975 7550 5050
+Wire Wire Line
+	8125 5050 8425 5050
+Wire Wire Line
+	8725 5050 9100 5050
+Wire Wire Line
+	9100 5050 9100 5100
+Wire Notes Line
+	9250 5250 7400 5250
+Text Notes 7475 4850 0    50   ~ 0
+Led Indicador
+Wire Notes Line
+	7400 4725 9250 4725
+Wire Notes Line
+	9250 4725 9250 5250
+Wire Notes Line
+	7400 4725 7400 5250
+Wire Wire Line
+	1100 4825 1250 4825
+$Comp
+L EduRoMAA-EduCIAA-rescue:IRF7105-IRF7105-ROBUC_v02_EduCiAA-rescue U7
+U 1 1 5D7C2675
+P 5200 2950
+F 0 "U7" H 5400 3400 50  0000 C CNN
+F 1 "IRF7105" H 5050 3400 50  0000 C CNN
+F 2 "lib_fp:SOIC-8_3.9x4.9mm_P1.27mm" H 4675 2525 50  0001 C CNN
+F 3 "" H 4675 2525 50  0001 C CNN
+	1    5200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3300 4750 3300
+Wire Wire Line
+	4750 3300 4750 3600
+Wire Wire Line
+	8600 6175 8600 6275
+Wire Wire Line
+	3400 5575 3400 5675
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E1761EA
+P 4675 7300
+F 0 "#FLG01" H 4675 7375 50  0001 C CNN
+F 1 "PWR_FLAG" H 4675 7225 20  0000 C CNN
+F 2 "" H 4675 7300 50  0001 C CNN
+F 3 "~" H 4675 7300 50  0001 C CNN
+	1    4675 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E176383
+P 4675 7600
+F 0 "#FLG02" H 4675 7675 50  0001 C CNN
+F 1 "PWR_FLAG" H 4675 7750 20  0000 C CNN
+F 2 "" H 4675 7600 50  0001 C CNN
+F 3 "~" H 4675 7600 50  0001 C CNN
+	1    4675 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 7300 4675 7300
+Connection ~ 4325 7300
+Wire Wire Line
+	4675 7600 4325 7600
+Connection ~ 4325 7600
+Wire Notes Line
+	4975 7150 4975 7750
+Wire Notes Line
+	4975 7150 6900 7150
+Wire Notes Line
+	4975 7750 6900 7750
+Wire Notes Line
+	2775 7750 4900 7750
+Wire Notes Line
+	4900 7750 4900 7150
+Wire Notes Line
+	4900 7150 2775 7150
+Wire Wire Line
+	5100 1925 5100 2075
+Wire Wire Line
+	6775 1925 6775 2075
+Wire Wire Line
+	6525 1925 6525 2100
+Text Label 6525 2075 0    50   ~ 0
+GND_IRLED1
+Wire Wire Line
+	4850 1925 4850 2100
+Text Label 4850 2025 0    50   ~ 0
+GND_IRLED1
+Wire Notes Line
+	3700 5250 3700 550 
+Wire Notes Line
+	3750 2225 3750 550 
+Text Label 800  6875 0    50   ~ 0
+GND_LED2
+Text Label 5025 6875 0    50   ~ 0
+GND_LED2
+$Comp
+L power:+5V #PWR019
+U 1 1 5CE96777
+P 5025 5750
+F 0 "#PWR019" H 5025 5600 50  0001 C CNN
+F 1 "+5V" H 5040 5923 50  0000 C CNN
+F 2 "" H 5025 5750 50  0001 C CNN
+F 3 "" H 5025 5750 50  0001 C CNN
+	1    5025 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 5CE96944
+P 800 5725
+F 0 "#PWR020" H 800 5575 50  0001 C CNN
+F 1 "+5V" H 815 5898 50  0000 C CNN
+F 2 "" H 800 5725 50  0001 C CNN
+F 3 "" H 800 5725 50  0001 C CNN
+	1    800  5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5CEB2036
+P 8225 1250
+F 0 "#PWR021" H 8225 1000 50  0001 C CNN
+F 1 "GND" H 8230 1077 50  0001 C CNN
+F 2 "" H 8225 1250 50  0001 C CNN
+F 3 "" H 8225 1250 50  0001 C CNN
+	1    8225 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7500 975  0    50   Input ~ 0
+SegLinea_OnOff
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R32
+U 1 1 5CEB203E
+P 7700 975
+F 0 "R32" V 7495 975 50  0000 C CNN
+F 1 "1k" V 7586 975 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 7740 965 50  0001 C CNN
+F 3 "" H 7700 975 50  0001 C CNN
+	1    7700 975 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8225 1175 8225 1250
+Wire Wire Line
+	7500 975  7550 975 
+Wire Wire Line
+	7850 975  7925 975 
+Wire Wire Line
+	8225 775  8225 700 
+Text Label 8225 700  0    50   ~ 0
+GND_IRLED1
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R33
+U 1 1 5CFA72E1
+P 1225 3625
+F 0 "R33" V 1020 3625 50  0000 C CNN
+F 1 "1k" V 1111 3625 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 1265 3615 50  0001 C CNN
+F 3 "" H 1225 3625 50  0001 C CNN
+	1    1225 3625
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5CFA72EF
+P 1750 3900
+F 0 "#PWR022" H 1750 3650 50  0001 C CNN
+F 1 "GND" H 1755 3727 50  0001 C CNN
+F 2 "" H 1750 3900 50  0001 C CNN
+F 3 "" H 1750 3900 50  0001 C CNN
+	1    1750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 3625 875  3625
+Text Label 875  3625 0    50   ~ 0
+B_1
+Wire Wire Line
+	1375 3625 1450 3625
+Wire Wire Line
+	1750 3825 1750 3900
+Wire Wire Line
+	2125 3350 1750 3350
+Wire Wire Line
+	1750 3350 1750 3425
+Wire Wire Line
+	1750 3275 1750 3350
+Connection ~ 1750 3350
+$Comp
+L power:+3.3VA #PWR0105
+U 1 1 5CC69314
+P 10200 3450
+F 0 "#PWR0105" H 10200 3300 50  0001 C CNN
+F 1 "+3.3VA" H 10215 3623 50  0000 C CNN
+F 2 "" H 10200 3450 50  0001 C CNN
+F 3 "" H 10200 3450 50  0001 C CNN
+	1    10200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 ConDer1
+U 1 1 5CC85BA2
+P 10600 3850
+F 0 "ConDer1" H 10680 3842 50  0000 L CNN
+F 1 "Conn_01x10" H 10680 3751 50  0000 L CNN
+F 2 "lib_fp:PinHeader_1x10_P2.54mm_Vertical" H 10600 3850 50  0001 C CNN
+F 3 "~" H 10600 3850 50  0001 C CNN
+	1    10600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 ConIzq1
+U 1 1 5CCA1E77
+P 8600 3850
+F 0 "ConIzq1" H 8680 3842 50  0000 L CNN
+F 1 "Conn_01x12" H 8680 3751 50  0000 L CNN
+F 2 "lib_fp:PinHeader_1x12_P2.54mm_Vertical" H 8600 3850 50  0001 C CNN
+F 3 "~" H 8600 3850 50  0001 C CNN
+	1    8600 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 3550 10400 3550
+Wire Wire Line
+	10200 3450 10400 3450
+Wire Wire Line
+	10400 3650 10075 3650
+Wire Wire Line
+	10400 3750 10075 3750
+Wire Wire Line
+	10075 3850 10400 3850
+Text GLabel 10075 4050 0    50   Input ~ 0
+Encoder_Der
+Wire Wire Line
+	10400 4050 10075 4050
+Text GLabel 10075 3950 0    50   Output ~ 0
+Encoder_OnOff
+Wire Wire Line
+	10400 3950 10075 3950
+Wire Wire Line
+	10400 4150 10075 4150
+Wire Wire Line
+	10400 4250 10075 4250
+Text GLabel 10075 4350 0    50   Output ~ 0
+Sonar_OnOff
+Wire Wire Line
+	10400 4350 10075 4350
+Text GLabel 8225 3350 0    50   Input ~ 0
+SegLinea_Izq
+Wire Wire Line
+	8400 3350 8225 3350
+Wire Wire Line
+	8400 3450 7625 3450
+$Comp
+L power:GND #PWR0106
+U 1 1 5CE69D37
+P 7600 3650
+F 0 "#PWR0106" H 7600 3400 50  0001 C CNN
+F 1 "GND" H 7605 3477 50  0001 C CNN
+F 2 "" H 7600 3650 50  0001 C CNN
+F 3 "" H 7600 3650 50  0001 C CNN
+	1    7600 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 8225 3550 0    50   Input ~ 0
+SegLinea_Der
+Wire Wire Line
+	8400 3550 8225 3550
+Wire Wire Line
+	8400 3650 7625 3650
+Wire Wire Line
+	7625 3450 7625 3650
+Connection ~ 7625 3650
+Text GLabel 8225 3750 0    50   Input ~ 0
+Bluetooth_Rx
+Wire Wire Line
+	8400 3750 8225 3750
+Wire Wire Line
+	8400 3850 8225 3850
+Wire Wire Line
+	7625 3650 7600 3650
+Text GLabel 8225 3950 0    50   Output ~ 0
+Bluetooth_OnOff
+Wire Wire Line
+	8400 3950 8225 3950
+Text GLabel 8225 4050 0    50   Output ~ 0
+SegLinea_OnOff
+Wire Wire Line
+	8400 4050 8225 4050
+Text GLabel 8225 4150 0    50   Output ~ 0
+Buzzer
+Wire Wire Line
+	8400 4150 8225 4150
+Text GLabel 8225 4250 0    50   Output ~ 0
+ENABLE_Motors
+Wire Wire Line
+	8400 4250 8225 4250
+Text GLabel 8225 4350 0    50   Input ~ 0
+PWM_Izq
+Text GLabel 8225 4450 0    50   Input ~ 0
+PWM_Der
+Wire Wire Line
+	8400 4450 8225 4450
+Wire Wire Line
+	8400 4350 8225 4350
+$Comp
+L power:+3.3VA #PWR0107
+U 1 1 5D0814AC
+P 5100 925
+F 0 "#PWR0107" H 5100 775 50  0001 C CNN
+F 1 "+3.3VA" H 5115 1098 50  0000 C CNN
+F 2 "" H 5100 925 50  0001 C CNN
+F 3 "" H 5100 925 50  0001 C CNN
+	1    5100 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR0113
+U 1 1 5D081691
+P 6775 925
+F 0 "#PWR0113" H 6775 775 50  0001 C CNN
+F 1 "+3.3VA" H 6790 1098 50  0000 C CNN
+F 2 "" H 6775 925 50  0001 C CNN
+F 3 "" H 6775 925 50  0001 C CNN
+	1    6775 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 5D082740
+P 6900 3050
+F 0 "J4" H 6980 3042 50  0000 L CNN
+F 1 "Bluetooth" H 6980 2951 50  0000 L CNN
+F 2 "lib_fp:PinHeader_1x04_P2.54mm_Vertical" H 6900 3050 50  0001 C CNN
+F 3 "~" H 6900 3050 50  0001 C CNN
+	1    6900 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5D09C1F1
+P 6900 4550
+F 0 "J5" H 6979 4542 50  0000 L CNN
+F 1 "Sonar" H 6825 4750 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6900 4550 50  0001 C CNN
+F 3 "~" H 6900 4550 50  0001 C CNN
+	1    6900 4550
+	1    0    0    -1  
+$EndComp
+Text GLabel 925  1325 0    50   Input ~ 0
+PWM_Izq
+Text GLabel 5875 1425 2    50   Output ~ 0
+SegLinea_Izq
+$Comp
+L Transistor_BJT:BC548 Q2
+U 1 1 5D161E50
+P 1850 4825
+F 0 "Q2" H 2041 4871 50  0000 L CNN
+F 1 "BC548" H 2041 4780 50  0000 L CNN
+F 2 "lib_fp:TO-92_mod" H 2050 4750 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1850 4825 50  0001 L CNN
+	1    1850 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q1
+U 1 1 5D162B74
+P 1650 3625
+F 0 "Q1" H 1841 3671 50  0000 L CNN
+F 1 "BC548" H 1841 3580 50  0000 L CNN
+F 2 "lib_fp:TO-92_mod" H 1850 3550 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 1650 3625 50  0001 L CNN
+	1    1650 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q3
+U 1 1 5D162C7C
+P 2875 3600
+F 0 "Q3" H 3066 3646 50  0000 L CNN
+F 1 "BC548" H 3066 3555 50  0000 L CNN
+F 2 "lib_fp:TO-92_mod" H 3075 3525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 2875 3600 50  0001 L CNN
+	1    2875 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC548 Q5
+U 1 1 5D163DCF
+P 8125 975
+F 0 "Q5" H 8316 1021 50  0000 L CNN
+F 1 "BC548" H 8316 930 50  0000 L CNN
+F 2 "lib_fp:TO-92_mod" H 8325 900 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 8125 975 50  0001 L CNN
+	1    8125 975 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 925  5100 1025
+Wire Wire Line
+	6775 925  6775 1025
+$Comp
+L power:+5V #PWR0118
+U 1 1 5D16818B
+P 6525 950
+F 0 "#PWR0118" H 6525 800 50  0001 C CNN
+F 1 "+5V" H 6540 1123 50  0000 C CNN
+F 2 "" H 6525 950 50  0001 C CNN
+F 3 "" H 6525 950 50  0001 C CNN
+	1    6525 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0130
+U 1 1 5D1682D2
+P 4850 925
+F 0 "#PWR0130" H 4850 775 50  0001 C CNN
+F 1 "+5V" H 4865 1098 50  0000 C CNN
+F 2 "" H 4850 925 50  0001 C CNN
+F 3 "" H 4850 925 50  0001 C CNN
+	1    4850 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 925  4850 1025
+Wire Wire Line
+	6525 950  6525 1025
+Text Label 2850 1325 0    50   ~ 0
+Motor_Izq1
+Text Label 2850 1525 0    50   ~ 0
+Motor_Izq2
+Text Label 2850 1925 0    50   ~ 0
+Motor_Der1
+Text Label 2850 2125 0    50   ~ 0
+Motor_Der2
+Wire Wire Line
+	10125 2425 10600 2425
+Wire Wire Line
+	10600 2525 10600 2425
+Connection ~ 10600 2425
+Wire Wire Line
+	10600 2425 10650 2425
+Wire Wire Line
+	9475 2425 9525 2425
+Wire Wire Line
+	9725 2425 9525 2425
+Connection ~ 9525 2425
+Wire Wire Line
+	10300 1650 10600 1650
+Wire Wire Line
+	10600 1775 10600 1650
+Connection ~ 10600 1650
+Wire Wire Line
+	10600 1650 10625 1650
+Wire Wire Line
+	9700 1650 9900 1650
+Text Label 6000 2950 0    50   ~ 0
+Vcc_BT
+Text Label 5925 4450 0    50   ~ 0
+Vcc_Sonar
+Text Notes 9350 4825 0    50   ~ 0
+Entrada de alimentación Motores
+$Comp
+L EduRoMAA-EduCIAA-rescue:Conn_01x02-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue J7
+U 1 1 5CDC6C93
+P 9850 5175
+F 0 "J7" H 9950 5125 50  0000 C CNN
+F 1 "DC_IN" H 9850 5275 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9850 5175 50  0001 C CNN
+F 3 "" H 9850 5175 50  0001 C CNN
+	1    9850 5175
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5175 10100 5175
+Wire Wire Line
+	10100 5175 10100 5075
+Wire Wire Line
+	10100 5075 10300 5075
+Wire Wire Line
+	10050 5275 10100 5275
+Wire Wire Line
+	10100 5275 10100 5375
+Wire Wire Line
+	10100 5375 10300 5375
+Wire Notes Line
+	9300 5525 11150 5525
+Wire Notes Line
+	11150 4725 9300 4725
+$Comp
+L power:+9V #PWR05
+U 1 1 5CE6225F
+P 10300 5075
+F 0 "#PWR05" H 10300 4925 50  0001 C CNN
+F 1 "+9V" H 10315 5248 50  0000 C CNN
+F 2 "" H 10300 5075 50  0001 C CNN
+F 3 "" H 10300 5075 50  0001 C CNN
+	1    10300 5075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0131
+U 1 1 5CEB0F94
+P 2425 850
+F 0 "#PWR0131" H 2425 700 50  0001 C CNN
+F 1 "+9V" H 2440 1023 50  0000 C CNN
+F 2 "" H 2425 850 50  0001 C CNN
+F 3 "" H 2425 850 50  0001 C CNN
+	1    2425 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 875  1050 875 
+Wire Wire Line
+	1050 800  1050 850 
+Wire Wire Line
+	1500 850  1050 850 
+Connection ~ 1500 850 
+Connection ~ 1050 850 
+Wire Wire Line
+	1050 850  1050 875 
+Wire Wire Line
+	3050 775  3050 725 
+Wire Wire Line
+	3050 725  2625 725 
+Wire Wire Line
+	2625 725  2625 900 
+Wire Wire Line
+	2625 900  2425 900 
+Connection ~ 2425 900 
+Wire Wire Line
+	2425 900  2425 925 
+$Comp
+L power:GND #PWR023
+U 1 1 5CDC6C9A
+P 10300 5375
+F 0 "#PWR023" H 10300 5125 50  0001 C CNN
+F 1 "GND" H 10305 5202 50  0001 C CNN
+F 2 "" H 10300 5375 50  0001 C CNN
+F 3 "" H 10300 5375 50  0001 C CNN
+	1    10300 5375
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11150 3075 8950 3075
+Wire Notes Line
+	8950 3075 8950 1325
+Wire Notes Line
+	8950 1325 11150 1325
+Wire Notes Line
+	11150 1350 11150 3075
+Text GLabel 6525 2100 0    50   Input ~ 0
+GND_IRLED1
+Text GLabel 4850 2100 0    50   Input ~ 0
+GND_IRLED1
+Wire Notes Line
+	8725 550  8725 2225
+Wire Notes Line
+	3750 2225 8725 2225
+Wire Notes Line
+	3750 550  8725 550 
+Text GLabel 8225 700  0    50   Input ~ 0
+GND_IRLED1
+Wire Wire Line
+	7475 6150 7625 6150
+$Comp
+L Transistor_BJT:BC548 Q4
+U 1 1 5D16349B
+P 4225 6625
+F 0 "Q4" H 4416 6671 50  0000 L CNN
+F 1 "BC548" H 4416 6580 50  0000 L CNN
+F 2 "lib_fp:TO-92_mod" H 4425 6550 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4225 6625 50  0001 L CNN
+	1    4225 6625
+	1    0    0    -1  
+$EndComp
+Text Label 4325 6300 0    50   ~ 0
+GND_LED2
+Wire Wire Line
+	4325 6425 4325 6300
+Wire Wire Line
+	3975 6625 4025 6625
+Wire Wire Line
+	3625 6625 3675 6625
+Wire Wire Line
+	4325 6825 4325 6900
+$Comp
+L EduRoMAA-EduCIAA-rescue:R_US-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue R12
+U 1 1 5C740469
+P 3825 6625
+F 0 "R12" V 3620 6625 50  0000 C CNN
+F 1 "1k" V 3711 6625 50  0000 C CNN
+F 2 "lib_fp:Resistor_Horizontal_RM7mm" V 3865 6615 50  0001 C CNN
+F 3 "" H 3825 6625 50  0001 C CNN
+	1    3825 6625
+	0    1    1    0   
+$EndComp
+Text GLabel 3625 6625 0    50   Input ~ 0
+Encoder_OnOff
+$Comp
+L EduRoMAA-EduCIAA-rescue:LM393-ROBUC_v00_D-ROBUC_v02_EduCiAA-rescue U4
+U 2 1 5C8A0F3E
+P 7175 6150
+F 0 "U4" H 7175 6517 50  0000 C CNN
+F 1 "LM393" H 7175 6426 50  0000 C CNN
+F 2 "lib_fp:DIP-8_W7.62mm_LongPads" H 7175 6150 50  0001 C CNN
+F 3 "" H 7175 6150 50  0001 C CNN
+	2    7175 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5C74A90E
+P 4325 6900
+F 0 "#PWR0132" H 4325 6650 50  0001 C CNN
+F 1 "GND" H 4330 6727 50  0001 C CNN
+F 2 "" H 4325 6900 50  0001 C CNN
+F 3 "" H 4325 6900 50  0001 C CNN
+	1    4325 6900
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	9250 6475 6900 6475
+Wire Notes Line
+	6900 6475 6900 7100
+Text GLabel 4325 6300 0    50   Input ~ 0
+GND_LED2
+Text GLabel 5025 6900 0    50   Input ~ 0
+GND_LED2
+Text GLabel 800  6875 2    50   Input ~ 0
+GND_LED2
+Wire Notes Line
+	11150 4700 11150 5525
+Wire Notes Line
+	9300 4725 9300 5525
+Text Notes 7475 3275 0    50   ~ 0
+Conectores
+$EndSCHEMATC
