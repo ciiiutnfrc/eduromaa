@@ -1,9 +1,9 @@
 # EduRoMAA
 
-El robot móvil EduRoMAA fue desarrollado con fines didácticos para la enseñanza de programación de sistemas embebidos utilizando la EduCIAA (versión educativa de la [Computadora Industrial Abierta Argentina](http://www.proyecto-ciaa.com.ar/)) en el [Centro de Investigación en Informática para la Ingeniería](http://ciii.frc.utn.edu.ar/PublicacionesCIII) de la [Universidad Tecnológica Nacional, Facultad Regional Córdoba](https://www.frc.utn.edu.ar/). Toda la información referente a su diseño se encuentra públicamente disponible en: https://github.com/ciiiutnfrc/eduromaa/ y para su realización se utilizó únicamente software libre: 
-1. KiCAD para el circuito electrónico y PCB.
-2. FreeCAD para la estructura mecánica.
-  * [https://www.youtube.com/watch?v=gHjaK3ePBkI](https://www.youtube.com/watch?v=gHjaK3ePBkI)
+El robot mÃ³vil EduRoMAA fue desarrollado con fines didÃ¡cticos para la enseÃ±anza de programaciÃ³n de sistemas embebidos utilizando la EduCIAA (versiÃ³n educativa de la [Computadora Industrial Abierta Argentina](http://www.proyecto-ciaa.com.ar/)) en el [Centro de InvestigaciÃ³n en InformÃ¡tica para la IngenierÃ­a](http://ciii.frc.utn.edu.ar/PublicacionesCIII) de la [Universidad TecnolÃ³gica Nacional, Facultad Regional CÃ³rdoba](https://www.frc.utn.edu.ar/). Toda la informaciÃ³n referente a su diseÃ±o se encuentra pÃºblicamente disponible en: https://github.com/ciiiutnfrc/eduromaa/ y para su realizaciÃ³n se utilizÃ³ Ãºnicamente software libre: 
+1. KiCAD para el circuito electrÃ³nico y PCB.
+2. FreeCAD para la estructura mecÃ¡nica.
+    * [https://www.youtube.com/watch?v=gHjaK3ePBkI](https://www.youtube.com/watch?v=gHjaK3ePBkI)
 3. Eclipse IDE con GCC-ARM para el firmware.
 
 
