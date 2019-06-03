@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name ROBUC_v02_EduCiAA-rescue)(type Legacy)(uri ${KIPRJMOD}/ROBUC_v02_EduCiAA-rescue.lib)(options "")(descr ""))
-  (lib (name EduRoMAA-EduCIAA-rescue)(type Legacy)(uri ${KIPRJMOD}/EduRoMAA-EduCIAA-rescue.lib)(options "")(descr ""))
+  (lib (name EduRoMAA-EduCIAA)(type Legacy)(uri ${KIPRJMOD}/lib_sch/EduRoMAA-EduCIAA.lib)(options "")(descr ""))
 )
