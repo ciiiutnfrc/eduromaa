@@ -1,30 +1,44 @@
+/*==================[inclusiones]=============================================*/
+#include "motores.h"
 #include "sapi.h"
 #include "sensores_ir.h"
+#include <stdlib.h>
 
+/*==================[definiciones]===========================================*/
+
+/*==================[implementaciones]=======================================*/
 int main(void)
 {
   uint16_t ir_izq, ir_der;
+  static char uartBuff[10];
 
 	/* Inicializa EduCIAA */
 	boardConfig();
 
-  /* ConfiguraciÃ³n de UART */
+  /* Configuración de UART */
   uartConfig(UART_USB, 9600);
 
 	/* Inicializa Sensores IR */
   iniSensoresIR();
-
+  prenderSensoresIR();
 	while(true)	
   {
-    prenderSensoresIR();
     actualizarSensoresIR();
 
     ir_izq = leerSensorIR(SENSOR_IR_IZQ);
-    uartTxWrite(UART_USB, (ir_izq>>8));
-    uartTxWrite(UART_USB, ir_izq);
+    ir_der = leerSensorIR(SENSOR_IR_DER);
 
-    apagarSensoresIR();
-    delay(1000);
+
+    uartWriteString(UART_USB, "IR_I: ");
+    itoa(ir_izq, uartBuff, 10);
+    uartWriteString(UART_USB, uartBuff);
+
+    uartWriteString(UART_USB, "\tIR_D: ");
+    itoa(ir_der, uartBuff, 10);
+    uartWriteString(UART_USB, uartBuff);
+    uartWriteString(UART_USB, "\r\n");
+
+    delay(2000);
 	}
 	return 0;
 }

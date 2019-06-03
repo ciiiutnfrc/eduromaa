@@ -1,7 +1,11 @@
+/*==================[inclusiones]=============================================*/
 #include "sapi.h"
 #include "tacometros.h"
 #include <stdlib.h>
 
+/*==================[definiciones]===========================================*/
+
+/*==================[implementaciones]=======================================*/
 int main(void)
 {
   tacometro_t tacoIzq, tacoDer;

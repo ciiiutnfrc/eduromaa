@@ -13,7 +13,7 @@
 #define MOTOR_PWM_PARADO 128 // 50% de PWM mantiene motores "trabados"
 
 /*==================[implementaciones]=======================================*/
-bool_t iniMotores(void)
+void iniMotores(void)
 {
 	gpioConfig(MOTOR_ENABLE, GPIO_ENABLE);
 	gpioConfig(MOTOR_ENABLE, GPIO_OUTPUT);
@@ -46,7 +46,6 @@ void escribirMotorIzq(int8_t velMotIzq)
 	if (velMotIzq >= -MOTOR_VEL_MAX && velMotIzq <= MOTOR_VEL_MAX){
 			uint8_t pwmIzq = velMotIzq * ((float)MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
 			pwmWrite(MOTOR_PWM_IZQ, pwmIzq);
-
 		}
 }
 
@@ -55,7 +54,6 @@ void escribirMotorDer(int8_t velMotDer)
 	if (velMotDer >= -MOTOR_VEL_MAX && velMotDer <= MOTOR_VEL_MAX){
 			uint8_t pwmDer = velMotDer * ((float)MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
 			pwmWrite(MOTOR_PWM_DER, pwmDer);
-
 		}
 }
 
@@ -70,3 +68,4 @@ void escribirPWMMotores(uint8_t pwmDer, uint8_t pwmIzq)
 	pwmWrite(MOTOR_PWM_IZQ, pwmIzq);
 	pwmWrite(MOTOR_PWM_DER, pwmDer);
 }
+

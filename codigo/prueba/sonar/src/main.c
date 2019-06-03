@@ -1,6 +1,11 @@
+/*==================[inclusiones]=============================================*/
 #include "sapi.h"
 #include "sonar.h"
 
+
+/*==================[definiciones]===========================================*/
+
+/*==================[implementaciones]=======================================*/
 int main(void)
 {
   float dist_cm;
@@ -12,6 +17,7 @@ int main(void)
   iniSonar();
   prenderSonar();
 
+
   while(true)
   {
     leerSonar(&dist_cm);
@@ -21,9 +27,11 @@ int main(void)
     else
       gpioWrite(LED1, OFF);
 
-    delay(1000);
+  //  delay(500);
+ //   gpioWrite(LED2, ON);
+ //   delay(500);
+ //   gpioWrite(LED2, OFF);
   };
 
   return 0;
 }
-

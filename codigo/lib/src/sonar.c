@@ -10,14 +10,15 @@ bool sonar_on = false;
 
 
 /*==================[protitipos]==============================================*/
+
 void iniSonar(void)
 {
 	/* Inicializar el sensor ultrasonico #0 */
 	ultrasonicSensorConfig(ULTRASONIC_SENSOR_0, ULTRASONIC_SENSOR_ENABLE);
 
-  /* Configurar pin de encendido/apagado (ToDo) */
-  gpioConfig(SONAR_ONOFF_GPIO, GPIO_ENABLE);
-  gpioConfig(SONAR_ONOFF_GPIO, GPIO_OUTPUT);
+	/* Configurar pin de encendido/apagado (ToDo) */
+	gpioConfig(SONAR_ONOFF_GPIO, GPIO_ENABLE);
+	gpioConfig(SONAR_ONOFF_GPIO, GPIO_OUTPUT);
 }
 
 void prenderSonar(void)

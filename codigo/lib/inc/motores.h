@@ -10,7 +10,7 @@
 
 /*==================[protitipos]=============================================*/
 
-bool_t iniMotores(void);
+void iniMotores(void);
 
 void prenderMotores(void); // EN=1 y PWM=50%
 void apagarMotores(void);
