@@ -88,9 +88,9 @@ uint8_t prenderIntParagolpes(void (*ptrIzq)(void), void (*ptrDer)(void)){
 	/* Configurar interrupción para flanco descendente */
 	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
-	Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
+	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
-	Chip_PININT_EnableIntLow(LPC_GPIO_PIN_INT,
+	Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
 
 	/* Asignación de función de Callback */
@@ -109,9 +109,9 @@ uint8_t prenderIntParagolpes(void (*ptrIzq)(void), void (*ptrDer)(void)){
 	/* Configurar interrupción para flanco descendente */
 	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_DER_PININT_INDEX));
-	Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
+	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_DER_PININT_INDEX));
-	Chip_PININT_EnableIntLow(LPC_GPIO_PIN_INT,
+	Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_DER_PININT_INDEX));
 
 	/* Asignación de función de Callback */

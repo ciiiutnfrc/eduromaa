@@ -10,7 +10,7 @@
 #define MOTOR_OFF OFF
 
 #define MOTOR_VEL_MAX 100
-#define MOTOR_PWM_PARADO 128 // 50% de PWM mantiene motores "trabados"
+#define MOTOR_PWM_PARADO 127 // 50% de PWM mantiene motores "trabados"
 
 /*==================[implementaciones]=======================================*/
 void iniMotores(void)
@@ -18,7 +18,7 @@ void iniMotores(void)
 	gpioConfig(MOTOR_ENABLE, GPIO_ENABLE);
 	gpioConfig(MOTOR_ENABLE, GPIO_OUTPUT);
 
-	/* HabilitaciÃ³n general */
+	/* Habilitación general */
 	pwmConfig(0, PWM_ENABLE);
 
 	pwmConfig(MOTOR_PWM_IZQ, PWM_ENABLE_OUTPUT);
@@ -44,7 +44,7 @@ void apagarMotores(void)
 void escribirMotorIzq(int8_t velMotIzq)
 {
 	if (velMotIzq >= -MOTOR_VEL_MAX && velMotIzq <= MOTOR_VEL_MAX){
-			uint8_t pwmIzq = velMotIzq * ((float)MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
+			int16_t pwmIzq = velMotIzq * ((float)MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
 			pwmWrite(MOTOR_PWM_IZQ, pwmIzq);
 		}
 }
@@ -52,7 +52,7 @@ void escribirMotorIzq(int8_t velMotIzq)
 void escribirMotorDer(int8_t velMotDer)
 {
 	if (velMotDer >= -MOTOR_VEL_MAX && velMotDer <= MOTOR_VEL_MAX){
-			uint8_t pwmDer = velMotDer * ((float)MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
+			int16_t pwmDer = velMotDer * ((float)MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
 			pwmWrite(MOTOR_PWM_DER, pwmDer);
 		}
 }

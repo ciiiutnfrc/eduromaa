@@ -10,7 +10,7 @@
 int main(void)
 {
   uint16_t ir_izq, ir_der;
-  static char uartBuff[10];
+  static char buffer[10];
 
 	/* Inicializa EduCIAA */
 	boardConfig();
@@ -30,12 +30,12 @@ int main(void)
 
 
     uartWriteString(UART_USB, "IR_I: ");
-    itoa(ir_izq, uartBuff, 10);
-    uartWriteString(UART_USB, uartBuff);
+    itoa(ir_izq, buffer, 10);
+    uartWriteString(UART_USB, buffer);
 
     uartWriteString(UART_USB, "\tIR_D: ");
-    itoa(ir_der, uartBuff, 10);
-    uartWriteString(UART_USB, uartBuff);
+    itoa(ir_der, buffer, 10);
+    uartWriteString(UART_USB, buffer);
     uartWriteString(UART_USB, "\r\n");
 
     delay(2000);

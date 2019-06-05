@@ -16,6 +16,7 @@ int main(void){
 	/* Configuración de UART */
 	uartConfig(UART_USB, 9600);
 
+	/* Inicializa módulo Bluetooth */
 	iniBT();
 	prenderBT();
 
