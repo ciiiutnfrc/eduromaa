@@ -1,4 +1,4 @@
-update=vie 03 may 2019 17:52:11 -03
+update=7/6/2019 3:41:45 p. m.
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=settings/template_CIII.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=../../../../../../Desktop/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
