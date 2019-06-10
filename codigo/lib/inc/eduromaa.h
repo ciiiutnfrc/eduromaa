@@ -12,12 +12,9 @@
 #include "bluetooth.h"
 #include <stdlib.h>
 
-
 /*==================[definiciones]============================================*/
-
 
 /*==================[protitipos]==============================================*/
 void iniEduromaa(void);
-
 
 #endif /* _EDUROMAA_H */

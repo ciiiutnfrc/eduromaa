@@ -1,4 +1,3 @@
-
 /*==================[inclusiones]============================================*/
 #include "sapi_gpio.h"
 #include "paragolpes.h"
@@ -47,111 +46,117 @@ static void (*ptrParagolpesDerCback)(void);
  * Devuelve valor distinto de 0 solo cuando ambos pines GPIO fueron
  * configurados correctamente como entradas.
  * */
-bool_t iniParagolpes(void) {
+bool_t iniParagolpes(void)
+{
 
-	if (gpioConfig(PARAGOLPES_IZQ, GPIO_INPUT) &&
-			gpioConfig(PARAGOLPES_DER, GPIO_INPUT)) {
+    if (gpioConfig(PARAGOLPES_IZQ, GPIO_INPUT) &&
+    gpioConfig(PARAGOLPES_DER, GPIO_INPUT))
+    {
 
-		return 1;
-	}
-	return 0;
+        return 1;
+    }
+    return 0;
 }
 
 /**
  *
  */
 
-bool_t leerParagolpesIzq(void) {
+bool_t leerParagolpesIzq(void)
+{
 
-	return gpioRead(PARAGOLPES_IZQ);
+    return gpioRead(PARAGOLPES_IZQ);
 }
 
+bool_t leerParagolpesDer(void)
+{
 
-bool_t leerParagolpesDer(void) {
-
-	return gpioRead(PARAGOLPES_DER);
+    return gpioRead(PARAGOLPES_DER);
 }
 
-estadosParagolpes leerParagolpes(void) {
+estadosParagolpes leerParagolpes(void)
+{
 
-	return gpioRead(PARAGOLPES_IZQ) + (gpioRead(PARAGOLPES_DER) << 1);
+    return gpioRead(PARAGOLPES_IZQ) + (gpioRead(PARAGOLPES_DER) << 1);
 }
 
-uint8_t prenderIntParagolpes(void (*ptrIzq)(void), void (*ptrDer)(void)){
-	Chip_PININT_Init(LPC_GPIO_PIN_INT);
+uint8_t prenderIntParagolpes(void (*ptrIzq)(void), void (*ptrDer)(void))
+{
+    Chip_PININT_Init(LPC_GPIO_PIN_INT);
 
-	/* PARAGOLPES IZQUIERDO */
-	/* Configurar el canal de interrupci�n en bloque SysCon */
-	Chip_SCU_GPIOIntPinSel(PARAGOLPES_IZQ_PININT_INDEX, PARAGOLPES_IZQ_PORT,
-			PARAGOLPES_IZQ_PIN);
+    /* PARAGOLPES IZQUIERDO */
+    /* Configurar el canal de interrupci�n en bloque SysCon */
+    Chip_SCU_GPIOIntPinSel(PARAGOLPES_IZQ_PININT_INDEX, PARAGOLPES_IZQ_PORT,
+    PARAGOLPES_IZQ_PIN);
 
-	/* Configurar interrupci�n para flanco descendente */
-	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
-	Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
-	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
-	            PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
-	Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
+    /* Configurar interrupci�n para flanco descendente */
+    Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
+    Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
+    Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
+    Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
 
-	/* Asignaci�n de funci�n de Callback */
-	ptrParagolpesIzqCback = ptrIzq;
+    /* Asignaci�n de funci�n de Callback */
+    ptrParagolpesIzqCback = ptrIzq;
 
-	/* Habilitar interrupcion en NVIC */
-	NVIC_ClearPendingIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
-	NVIC_EnableIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
+    /* Habilitar interrupcion en NVIC */
+    NVIC_ClearPendingIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
+    NVIC_EnableIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
 
+    /* PARAGOLPES DERECHO */
+    /* Configurar el canal de interrupci�n en bloque SysCon */
+    Chip_SCU_GPIOIntPinSel(PARAGOLPES_DER_PININT_INDEX, PARAGOLPES_DER_PORT,
+    PARAGOLPES_DER_PIN);
 
-	/* PARAGOLPES DERECHO */
-	/* Configurar el canal de interrupci�n en bloque SysCon */
-	Chip_SCU_GPIOIntPinSel(PARAGOLPES_DER_PININT_INDEX, PARAGOLPES_DER_PORT,
-			PARAGOLPES_DER_PIN);
+    /* Configurar interrupci�n para flanco descendente */
+    Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_DER_PININT_INDEX));
+    Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_DER_PININT_INDEX));
+    Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_DER_PININT_INDEX));
+    Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_DER_PININT_INDEX));
 
-	/* Configurar interrupci�n para flanco descendente */
-	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_DER_PININT_INDEX));
-	Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_DER_PININT_INDEX));
-	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
-	            PININTCH(PARAGOLPES_DER_PININT_INDEX));
-	Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_DER_PININT_INDEX));
+    /* Asignaci�n de funci�n de Callback */
+    ptrParagolpesDerCback = ptrDer;
 
-	/* Asignaci�n de funci�n de Callback */
-	ptrParagolpesDerCback = ptrDer;
+    /* Habilitar interrupcion en NVIC */
+    NVIC_ClearPendingIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
+    NVIC_EnableIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
 
-	/* Habilitar interrupcion en NVIC */
-	NVIC_ClearPendingIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
-	NVIC_EnableIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
-
-	return 1;
+    return 1;
 }
 
-uint8_t apagarIntParagolpes(void){
-	/* PARAGOLPES IZQUIERDO */
-	/* Deshabilitar interrupcion en NVIC */
-	NVIC_ClearPendingIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
-	NVIC_DisableIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
+uint8_t apagarIntParagolpes(void)
+{
+    /* PARAGOLPES IZQUIERDO */
+    /* Deshabilitar interrupcion en NVIC */
+    NVIC_ClearPendingIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
+    NVIC_DisableIRQ(PARAGOLPES_IZQ_PININT_NVIC_NAME);
 
+    /* PARAGOLPES DERECHO */
+    /* Deshabilitar interrupcion en NVIC */
+    NVIC_ClearPendingIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
+    NVIC_DisableIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
 
-	/* PARAGOLPES DERECHO */
-	/* Deshabilitar interrupcion en NVIC */
-	NVIC_ClearPendingIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
-	NVIC_DisableIRQ(PARAGOLPES_DER_PININT_NVIC_NAME);
-
-	return 1;
+    return 1;
 }
 
-void PARAGOLPES_IZQ_INTERRUPCION(void){
-	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
+void PARAGOLPES_IZQ_INTERRUPCION(void)
+{
+    Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
 
-	ptrParagolpesIzqCback();
+    ptrParagolpesIzqCback();
 }
-void PARAGOLPES_DER_INTERRUPCION(void){
-	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
-			PININTCH(PARAGOLPES_DER_PININT_INDEX));
+void PARAGOLPES_DER_INTERRUPCION(void)
+{
+    Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
+            PININTCH(PARAGOLPES_DER_PININT_INDEX));
 
-	ptrParagolpesDerCback();
+    ptrParagolpesDerCback();
 }

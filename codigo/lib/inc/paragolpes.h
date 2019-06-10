@@ -3,14 +3,16 @@
 
 /*==================[inclusiones]============================================*/
 #include "sapi.h"
-#include "chip.h"
+//#include "chip.h"
 #include "board.h"
 
 /*==================[definiciones]===========================================*/
-typedef enum {LIBRE, GOLPE_IZQ, GOLPE_DER, GOLPE_AMBOS} estadosParagolpes;
+typedef enum
+{
+    LIBRE, GOLPE_IZQ, GOLPE_DER, GOLPE_AMBOS
+} estadosParagolpes;
 
 /*==================[protitipos]=============================================*/
-
 
 bool_t iniParagolpes(void);
 

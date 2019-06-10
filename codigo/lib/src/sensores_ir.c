@@ -15,34 +15,34 @@ uint16_t sensores_ir[SENSOR_IR_CANT];
 
 void iniSensoresIR(void)
 {
-  adcConfig(ADC_ENABLE);
+    adcConfig(ADC_ENABLE);
 
-  /* Configuración del GPIO prender/apagar */
-  gpioConfig(SENSORES_IR_H, GPIO_ENABLE);
-  gpioConfig(SENSORES_IR_H, GPIO_OUTPUT);
+    /* Configuración del GPIO prender/apagar */
+    gpioConfig(SENSORES_IR_H, GPIO_ENABLE);
+    gpioConfig(SENSORES_IR_H, GPIO_OUTPUT);
 
-  /* Apaga Sensores IR */
-  gpioWrite(SENSORES_IR_H, SENSORES_IR_OFF);
+    /* Apaga Sensores IR */
+    gpioWrite(SENSORES_IR_H, SENSORES_IR_OFF);
 }
 
 void prenderSensoresIR(void)
 {
-  gpioWrite(SENSORES_IR_H, SENSORES_IR_ON);
+    gpioWrite(SENSORES_IR_H, SENSORES_IR_ON);
 }
 
 void apagarSensoresIR(void)
 {
-  gpioWrite(SENSORES_IR_H, SENSORES_IR_OFF);
+    gpioWrite(SENSORES_IR_H, SENSORES_IR_OFF);
 }
 
 void actualizarSensoresIR(void)
 {
-  sensores_ir[SENSOR_IR_IZQ] = adcRead(SENSOR_IR_CH_IZQ);
-  sensores_ir[SENSOR_IR_DER] = adcRead(SENSOR_IR_CH_DER);
+    sensores_ir[SENSOR_IR_IZQ] = adcRead(SENSOR_IR_CH_IZQ);
+    sensores_ir[SENSOR_IR_DER] = adcRead(SENSOR_IR_CH_DER);
 }
 
 uint16_t leerSensorIR(uint8_t indice)
 {
-  return sensores_ir[indice];
+    return sensores_ir[indice];
 }
 

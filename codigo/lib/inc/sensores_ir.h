@@ -5,10 +5,9 @@
 #include "sapi.h"
 
 /*==================[definiciones]============================================*/
-typedef enum {
-  SENSOR_IR_IZQ,
-  SENSOR_IR_DER,
-  SENSOR_IR_CANT
+typedef enum
+{
+    SENSOR_IR_IZQ, SENSOR_IR_DER, SENSOR_IR_CANT
 } sensores_ir_t;
 
 /*==================[protitipos]==============================================*/

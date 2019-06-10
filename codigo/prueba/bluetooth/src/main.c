@@ -4,34 +4,36 @@
 /*==================[definiciones]===========================================*/
 
 /*==================[implementaciones]=======================================*/
-int main(void){
+int main(void)
+{
 
-	/* ------------- INICIALIZACIONES ------------- */
-	uint8_t bt_dato = 0;
+    /* ------------- INICIALIZACIONES ------------- */
+    uint8_t bt_dato = 0;
 
+    /* Inicializa EduCIAA */
+    boardConfig();
 
-	/* Inicializa EduCIAA */
-	boardConfig();
+    /* Configuración de UART */
+    uartConfig(UART_USB, 115200);
 
-	/* Configuraci�n de UART */
-	uartConfig(UART_USB, 9600);
+    /* Inicializa m�dulo Bluetooth */
+    iniBT();
+    prenderBT();
 
-	/* Inicializa m�dulo Bluetooth */
-	iniBT();
-	prenderBT();
-
-	/* ------------- REPETIR POR SIEMPRE ------------- */
-	while(1) {
-		delay(2000);
-		gpioWrite(LED1, OFF);
-		if(leerBT(&bt_dato)){
-			if(bt_dato != '\n' && bt_dato != '\r'){
-				uartWriteByte(UART_USB, bt_dato);
-				uartWriteString(UART_USB, "\r\n");
-			}
-		}
-	}
-	/* Esta instrucci�n no deber�a ejecutarse, ya que el programa nunca sale del lazo "while(1)" */
-	return 0 ;
+    /* ------------- REPETIR POR SIEMPRE ------------- */
+    while (1)
+    {
+        delay(2000);
+        gpioWrite(LED1, OFF);
+        if (leerBT(&bt_dato))
+        {
+            if (bt_dato != '\n' && bt_dato != '\r')
+            {
+                printf("Recibido Bluetooth: %c\r\n", bt_dato);
+            }
+        }
+    }
+    /* Esta instrucción no debería ejecutarse, ya que el programa nunca sale del lazo "while(1)" */
+    return 0;
 }
 

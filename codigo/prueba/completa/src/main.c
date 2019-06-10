@@ -1,11 +1,12 @@
 /*==================[inclusiones]=============================================*/
 #include "eduromaa.h"
-#include <stdlib.h>
+#include <stdio.h>
 
 /*==================[definiciones]===========================================*/
-char* itoa(int, char* , int);
+
 /*==================[implementaciones]=======================================*/
-int main(void) {
+int main(void)
+{
 
     float dist_cm;
     tacometro_t tacoIzq, tacoDer;
@@ -15,7 +16,7 @@ int main(void) {
 
     /* Inicializa EduRoMAA */
     iniEduromaa();
-    /* Habilita Funcionamiento de Paragolpes por Interrupci�n */
+    /* Habilita Funcionamiento de Paragolpes por Interrupción */
     prenderIntParagolpes(paragolpesIzqInt, paragolpesDerInt);
 
     cuenta_lin = 0;
@@ -36,10 +37,11 @@ int main(void) {
     prenderTacometros();
     prenderSensoresIR();
 
-    uartWriteString(UART_USB, "\r\nEduRoMAA 0.1: Hola...\r\n");
+    printf("\r\nEduRoMAA 0.1: Hola...\r\n");
     prenderMotores();
     escribirMotores(100, 100);
-    while (1) {
+    while (1)
+    {
 
         delay(1000);
         /* Apagar paragolpes en cada ciclo */
@@ -49,60 +51,45 @@ int main(void) {
 
         leerSonar(&dist_cm);
 
-        if (dist_cm < 5) {
+        if (dist_cm < 5)
+        {
             escribirMotores(0, 0);
             prenderBocina();
-        } else if(dist_cm < 10){
+        } else if (dist_cm < 10)
+        {
             escribirMotores(50, 50);
-        } else if (dist_cm < 30){
+        } else if (dist_cm < 30)
+        {
             escribirMotores(80, 80);
-        } else {
+        } else
+        {
             escribirMotores(100, 100);
         }
 
         leerTacometros(&tacoIzq, &tacoDer);
         actualizarSensoresIR();
-
-        itoa(cuenta_lin++, buffer, 10);
-        uartWriteString(UART_USB, buffer);
-        uartWriteString(UART_USB, ": ");
-
-        uartWriteString(UART_USB, "S[cm]: ");
-        itoa(dist_cm, buffer, 10);
-        uartWriteString(UART_USB, buffer);
-
-        uartWriteString(UART_USB, "\tTI: ");
-        itoa(tacoIzq.cuenta, buffer, 10);
-        uartWriteString(UART_USB, buffer);
-        uartWriteString(UART_USB, " TD: ");
-        itoa(tacoDer.cuenta, buffer, 10);
-        uartWriteString(UART_USB, buffer);
-
         ir_izq = leerSensorIR(SENSOR_IR_IZQ);
         ir_der = leerSensorIR(SENSOR_IR_DER);
-        uartWriteString(UART_USB, "\tII: ");
-        itoa(ir_izq, buffer, 10);
-        uartWriteString(UART_USB, buffer);
 
-        uartWriteString(UART_USB, " ID: ");
-        itoa(ir_der, buffer, 10);
-        uartWriteString(UART_USB, buffer);
-        uartWriteString(UART_USB, "\r\n");
-
+        printf("%d: S[cm]:%d\tTI:%d\tTD:%d\tII:%d\tID:%d\r\n", cuenta_lin++,
+                (uint8_t) dist_cm, tacoIzq.cuenta, tacoDer.cuenta, ir_izq,
+                ir_der);
     }
     return 0;
 }
 
 /**
- * Funciones de Manejo de Interrupci�n
+ * Funciones de Manejo de Interrupción
  */
-void paragolpesIzqInt(void) {
+void paragolpesIzqInt(void)
+{
     gpioWrite(LED3, ON);
     escribirMotores(0, 0);
     prenderBocina();
 }
 
-void paragolpesDerInt(void) {
+void paragolpesDerInt(void)
+{
     gpioWrite(LED1, ON);
     escribirMotores(0, 0);
     prenderBocina();

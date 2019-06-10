@@ -8,36 +8,36 @@
 int main(void)
 {
 
-	/* Inicializa EduCIAA */
-	boardConfig();
+    /* Inicializa EduCIAA */
+    boardConfig();
 
-	/* Inicializa M�dulo de Paragolpes */
-	iniParagolpes();
+    /* Inicializa Módulo de Paragolpes */
+    iniParagolpes();
 
-	/* Habilita Funcionamiento de Paragolpes por Interrupci�n */
-	prenderIntParagolpes(paragolpesIzqInt, paragolpesDerInt);
+    /* Habilita Funcionamiento de Paragolpes por Interrupción */
+    prenderIntParagolpes(paragolpesIzqInt, paragolpesDerInt);
 
+    while (true)
+    {
+        /* Apaga los LEDs, si fueron encendidos por Interrupciones */
+        gpioWrite(LED3, OFF);
+        gpioWrite(LED1, OFF);
 
-	while(true)	{
-		/* Apaga los LEDs, si fueron encendidos por Interrupciones */
-		gpioWrite(LED3, OFF);
-		gpioWrite(LED1, OFF);
-
-		delay(6000);
-	}
-	return 0;
+        delay(6000);
+    }
+    return 0;
 }
 
 /**
- * Funciones de Manejo de Interrupci�n
+ * Funciones de Manejo de Interrupción
  */
 void paragolpesIzqInt(void)
 {
-  gpioWrite(LED3, ON);
+    gpioWrite(LED3, ON);
 }
 
 void paragolpesDerInt(void)
 {
-  gpioWrite(LED1, ON);
+    gpioWrite(LED1, ON);
 }
 

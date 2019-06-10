@@ -3,10 +3,10 @@
 
 /*==================[definiciones]============================================*/
 
-
 /*==================[implementaciones]==============================================*/
-void iniEduromaa(void) {
-    /* Todos los m�dulos se inicializan en estado APAGADO */
+void iniEduromaa(void)
+{
+    /* Todos los módulos se inicializan en estado APAGADO */
 
     /* Inicializa EduCIAA */
     boardConfig();
@@ -33,12 +33,11 @@ void iniEduromaa(void) {
     iniSensoresIR();
     apagarSensoresIR();
 
-
     /* Inicializa m�dulo Bluetooth */
     iniBT();
     apagarBT();
 
-    /* Configuraci�n de UART por USB */
-    uartConfig(UART_USB, 9600);
+    /* Configuración de UART por USB */
+    uartConfig(UART_USB, 115200);
 }
 

@@ -6,9 +6,8 @@
 
 /*==================[definiciones]=================================================*/
 
-
 /* Definiciones para uso de control remoto */
-#define	BT_AVANZAR			'F'			/* Caracteres configurados para aplicación */
+#define	BT_AVANZAR			'F'			/* Caracteres configurados para aplicaciï¿½n */
 #define	BT_RETROCEDER		'G'			/* Arduino Car */
 #define	BT_GIRAR_IZQ		'L'
 #define	BT_GIRAR_DER		'R'
@@ -24,14 +23,13 @@
 #define CMD_RUEDA_DER			  'd'		//Rueda Derecha
 #define CMD_RUEDA_IZQ			  'i'		//Rueda Izquierda
 
-
 /* Prototipos de funciones */
 
 void iniBT(void);
 void prenderBT(void);
 void apagarBT(void);
 
-bool_t 	leerBT(uint8_t *dato);
+bool_t leerBT(uint8_t *dato);
 
 #endif
 
