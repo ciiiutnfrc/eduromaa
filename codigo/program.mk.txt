@@ -1,0 +1,34 @@
+#PROGRAM_PATH = examples/c
+#PROGRAM_NAME = app
+
+PROGRAM_PATH = eduromaa/prueba
+
+# Proyecto 01 - GPIO como entradas: Paragolpes
+#PROGRAM_NAME = paragolpes
+
+# Proyecto 02 - GPIO como salidas: Bocina
+#PROGRAM_NAME = bocina
+
+# Proyecto 03 - PWM: Motores
+#PROGRAM_NAME = motores
+
+# Proyecto 04 - EINT: Paragolpes por interrupción
+#PROGRAM_NAME = paragolpes_int
+
+# Proyecto 05 - Capture: Sonar
+#PROGRAM_NAME = sonar
+#DEFINES+=SAPI_USE_INTERRUPTS
+
+
+# Proyecto 06 - Capture: Tacómetros ruedas
+#PROGRAM_NAME = tacometros
+
+# Proyecto 07 - ADC: Detector de línea
+#PROGRAM_NAME = sensores_ir
+
+# Proyecto 08 - Bluetooth: Comunicación Serial
+#PROGRAM_NAME = bluetooth
+
+# Proyecto 09 - Inicialización completa de Hardware EduRoMAA
+PROGRAM_NAME = completa
+DEFINES+=SAPI_USE_INTERRUPTS

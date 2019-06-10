@@ -11,10 +11,10 @@ int main(void)
 	/* Inicializa EduCIAA */
 	boardConfig();
 
-	/* Inicializa Módulo de Paragolpes */
+	/* Inicializa Mï¿½dulo de Paragolpes */
 	iniParagolpes();
 
-	/* Habilita Funcionamiento de Paragolpes por Interrupción */
+	/* Habilita Funcionamiento de Paragolpes por Interrupciï¿½n */
 	prenderIntParagolpes(paragolpesIzqInt, paragolpesDerInt);
 
 
@@ -29,7 +29,7 @@ int main(void)
 }
 
 /**
- * Funciones de Manejo de Interrupción
+ * Funciones de Manejo de Interrupciï¿½n
  */
 void paragolpesIzqInt(void)
 {

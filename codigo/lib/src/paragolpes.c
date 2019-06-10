@@ -11,8 +11,8 @@
 #define PARAGOLPES_IZQ_PIN          2  // Pin GPIO a mapear PININT: GPIO[2]
 #define PARAGOLPES_IZQ_PIN_PORT     1  // Puerto SCU: P1
 #define PARAGOLPES_IZQ_PIN_BIT      15 // Pin SCU: P1_15
-#define PARAGOLPES_IZQ_MODE_FUNC    SCU_MODE_FUNC0 // Función del pin para GPIO
-#define PARAGOLPES_IZQ_PININT_INDEX 3  //Índice de PININT para mapeo de GPIO
+#define PARAGOLPES_IZQ_MODE_FUNC    SCU_MODE_FUNC0 // Funciï¿½n del pin para GPIO
+#define PARAGOLPES_IZQ_PININT_INDEX 3  //ï¿½ndice de PININT para mapeo de GPIO
 #define PARAGOLPES_IZQ_INTERRUPCION  GPIO3_IRQHandler // Nombre de ISR PININT
 #define PARAGOLPES_IZQ_PININT_NVIC_NAME PIN_INT3_IRQn // Fuente de IRQ
 
@@ -22,7 +22,7 @@
 #define PARAGOLPES_DER_PIN          3	// Pin GPIO a mapear PININT: GPIO[3]
 #define PARAGOLPES_DER_PIN_PORT     1	// Puerto SCU: P1
 #define PARAGOLPES_DER_PIN_BIT      16	// // Pin SCU: P1_16
-#define PARAGOLPES_DER_MODE_FUNC    SCU_MODE_FUNC0 // Función del pin para GPIO
+#define PARAGOLPES_DER_MODE_FUNC    SCU_MODE_FUNC0 // Funciï¿½n del pin para GPIO
 #define PARAGOLPES_DER_PININT_INDEX 4	// Indice de PININT para mapeo de GPIO
 #define PARAGOLPES_DER_INTERRUPCION GPIO4_IRQHandler  // Nombre de ISR PININT
 #define PARAGOLPES_DER_PININT_NVIC_NAME PIN_INT4_IRQn // Fuente de IRQ
@@ -81,19 +81,21 @@ uint8_t prenderIntParagolpes(void (*ptrIzq)(void), void (*ptrDer)(void)){
 	Chip_PININT_Init(LPC_GPIO_PIN_INT);
 
 	/* PARAGOLPES IZQUIERDO */
-	/* Configurar el canal de interrupción en bloque SysCon */
+	/* Configurar el canal de interrupciï¿½n en bloque SysCon */
 	Chip_SCU_GPIOIntPinSel(PARAGOLPES_IZQ_PININT_INDEX, PARAGOLPES_IZQ_PORT,
 			PARAGOLPES_IZQ_PIN);
 
-	/* Configurar interrupción para flanco descendente */
+	/* Configurar interrupciï¿½n para flanco descendente */
 	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
-	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
+	Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
+	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
+	            PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
 	Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_IZQ_PININT_INDEX));
 
-	/* Asignación de función de Callback */
+	/* Asignaciï¿½n de funciï¿½n de Callback */
 	ptrParagolpesIzqCback = ptrIzq;
 
 	/* Habilitar interrupcion en NVIC */
@@ -102,19 +104,21 @@ uint8_t prenderIntParagolpes(void (*ptrIzq)(void), void (*ptrDer)(void)){
 
 
 	/* PARAGOLPES DERECHO */
-	/* Configurar el canal de interrupción en bloque SysCon */
+	/* Configurar el canal de interrupciï¿½n en bloque SysCon */
 	Chip_SCU_GPIOIntPinSel(PARAGOLPES_DER_PININT_INDEX, PARAGOLPES_DER_PORT,
 			PARAGOLPES_DER_PIN);
 
-	/* Configurar interrupción para flanco descendente */
+	/* Configurar interrupciï¿½n para flanco descendente */
 	Chip_PININT_ClearIntStatus(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_DER_PININT_INDEX));
-	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
+	Chip_PININT_SetPinModeEdge(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_DER_PININT_INDEX));
+	Chip_PININT_SetPinModeLevel(LPC_GPIO_PIN_INT,
+	            PININTCH(PARAGOLPES_DER_PININT_INDEX));
 	Chip_PININT_EnableIntHigh(LPC_GPIO_PIN_INT,
 			PININTCH(PARAGOLPES_DER_PININT_INDEX));
 
-	/* Asignación de función de Callback */
+	/* Asignaciï¿½n de funciï¿½n de Callback */
 	ptrParagolpesDerCback = ptrDer;
 
 	/* Habilitar interrupcion en NVIC */

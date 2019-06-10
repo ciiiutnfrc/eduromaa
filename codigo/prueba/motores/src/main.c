@@ -16,7 +16,7 @@ int main(void)
 
 
 	while(1){
-		/* Prueba PWM hacia atrás */
+		/* Prueba PWM hacia atrï¿½s */
 		prenderMotores();
 
 		escribirPWMMotores(120, 120);
@@ -38,7 +38,7 @@ int main(void)
 		delay(2000);
 
 
-		/* Prueba PWM hacia atrás */
+		/* Prueba PWM hacia atrï¿½s */
 		escribirPWMMotores(140, 140);
 		delay(2000);
 		escribirPWMMotores(160, 160);

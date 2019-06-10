@@ -17,3 +17,5 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 
+# Archivos de salida, compilación, temporarios, etc.
+**/out/

@@ -13,10 +13,10 @@ int main(void){
 	/* Inicializa EduCIAA */
 	boardConfig();
 
-	/* Configuración de UART */
+	/* Configuraciï¿½n de UART */
 	uartConfig(UART_USB, 9600);
 
-	/* Inicializa módulo Bluetooth */
+	/* Inicializa mï¿½dulo Bluetooth */
 	iniBT();
 	prenderBT();
 
@@ -31,7 +31,7 @@ int main(void){
 			}
 		}
 	}
-	/* Esta instrucción no debería ejecutarse, ya que el programa nunca sale del lazo "while(1)" */
+	/* Esta instrucciï¿½n no deberï¿½a ejecutarse, ya que el programa nunca sale del lazo "while(1)" */
 	return 0 ;
 }
 

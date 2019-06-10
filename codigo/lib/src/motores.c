@@ -18,7 +18,7 @@ void iniMotores(void)
 	gpioConfig(MOTOR_ENABLE, GPIO_ENABLE);
 	gpioConfig(MOTOR_ENABLE, GPIO_OUTPUT);
 
-	/* Habilitación general */
+	/* Habilitaciï¿½n general */
 	pwmConfig(0, PWM_ENABLE);
 
 	pwmConfig(MOTOR_PWM_IZQ, PWM_ENABLE_OUTPUT);

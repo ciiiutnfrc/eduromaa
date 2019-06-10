@@ -1,8 +1,9 @@
 /*==================[inclusiones]=============================================*/
 #include "eduromaa.h"
+#include <stdlib.h>
 
 /*==================[definiciones]===========================================*/
-
+char* itoa(int, char* , int);
 /*==================[implementaciones]=======================================*/
 int main(void) {
 
@@ -14,7 +15,7 @@ int main(void) {
 
     /* Inicializa EduRoMAA */
     iniEduromaa();
-    /* Habilita Funcionamiento de Paragolpes por Interrupción */
+    /* Habilita Funcionamiento de Paragolpes por Interrupciï¿½n */
     prenderIntParagolpes(paragolpesIzqInt, paragolpesDerInt);
 
     cuenta_lin = 0;
@@ -35,7 +36,7 @@ int main(void) {
     prenderTacometros();
     prenderSensoresIR();
 
-    uartWriteString(UART_USB, "EduRoMAA 0.1: Hola...\r\n");
+    uartWriteString(UART_USB, "\r\nEduRoMAA 0.1: Hola...\r\n");
     prenderMotores();
     escribirMotores(100, 100);
     while (1) {
@@ -93,7 +94,7 @@ int main(void) {
 }
 
 /**
- * Funciones de Manejo de Interrupción
+ * Funciones de Manejo de Interrupciï¿½n
  */
 void paragolpesIzqInt(void) {
     gpioWrite(LED3, ON);
