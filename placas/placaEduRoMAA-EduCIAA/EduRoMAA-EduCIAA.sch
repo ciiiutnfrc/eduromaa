@@ -933,7 +933,7 @@ $EndComp
 Wire Notes Line
 	550  7150 550  7750
 Text Notes 8800 625  0    50   ~ 0
-Bumper
+Paragolpes
 $Comp
 L EduRoMAA-EduCIAA:SW_Push SW1
 U 1 1 5C8CA217
