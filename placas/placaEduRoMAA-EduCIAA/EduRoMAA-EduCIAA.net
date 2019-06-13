@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "D:\\Users\\facun\\Google Drive\\Laboratorios\\CIII\\eduromaa\\placas\\placaEduRoMAA-EduCIAA\\EduRoMAA-EduCIAA.sch")
-    (date "13/6/2019 12:51:02 p. m.")
+    (date "13/6/2019 1:45:03 p. m.")
     (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
