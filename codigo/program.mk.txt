@@ -4,7 +4,7 @@
 PROGRAM_PATH = eduromaa/prueba
 
 # Proyecto 01 - GPIO como entradas: Paragolpes
-#PROGRAM_NAME = paragolpes
+PROGRAM_NAME = paragolpes
 
 # Proyecto 02 - GPIO como salidas: Bocina
 #PROGRAM_NAME = bocina
@@ -30,5 +30,5 @@ PROGRAM_PATH = eduromaa/prueba
 #PROGRAM_NAME = bluetooth
 
 # Proyecto 09 - Inicialización completa de Hardware EduRoMAA
-PROGRAM_NAME = completa
-DEFINES+=SAPI_USE_INTERRUPTS
+#PROGRAM_NAME = completa
+#DEFINES+=SAPI_USE_INTERRUPTS
