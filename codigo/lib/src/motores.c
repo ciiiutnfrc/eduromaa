@@ -9,8 +9,12 @@
 #define MOTOR_ON ON
 #define MOTOR_OFF OFF
 
-#define MOTOR_VEL_MAX 100
+
+#define MOTOR_PWM_MAX 255 // 50% de PWM mantiene motores "trabados"
 #define MOTOR_PWM_PARADO 127 // 50% de PWM mantiene motores "trabados"
+
+#define MOTOR_VEL_MAX 100
+
 
 /*==================[implementaciones]=======================================*/
 void iniMotores(void)
@@ -41,30 +45,18 @@ void apagarMotores(void)
     gpioWrite(MOTOR_ENABLE, MOTOR_OFF);
 }
 
-void escribirMotorIzq(int8_t velMotIzq)
-{
-    if (velMotIzq >= -MOTOR_VEL_MAX && velMotIzq <= MOTOR_VEL_MAX)
-    {
-        int16_t pwmIzq = velMotIzq
-                * ((float) MOTOR_PWM_PARADO / MOTOR_VEL_MAX)+ MOTOR_PWM_PARADO;
-        pwmWrite(MOTOR_PWM_IZQ, pwmIzq);
-    }
-}
 
-void escribirMotorDer(int8_t velMotDer)
-{
-    if (velMotDer >= -MOTOR_VEL_MAX && velMotDer <= MOTOR_VEL_MAX)
-    {
-        int16_t pwmDer = velMotDer
-                * ((float) MOTOR_PWM_PARADO / MOTOR_VEL_MAX)+ MOTOR_PWM_PARADO;
-        pwmWrite(MOTOR_PWM_DER, pwmDer);
-    }
-}
+/*
+ * Ancho de Pulso Modulado: 0 a 255
+ * */
 
-void escribirMotores(int8_t velMotIzq, int8_t velMotDer)
+void escribirPWMMotorIzq(int8_t pwmIzq)
 {
-    escribirMotorIzq(velMotIzq);
-    escribirMotorDer(velMotDer);
+    pwmWrite(MOTOR_PWM_IZQ, pwmIzq);
+}
+void escribirPWMMotorDer(int8_t pwmDer)
+{
+    pwmWrite(MOTOR_PWM_DER, pwmDer);
 }
 
 void escribirPWMMotores(uint8_t pwmDer, uint8_t pwmIzq)
@@ -73,3 +65,51 @@ void escribirPWMMotores(uint8_t pwmDer, uint8_t pwmIzq)
     pwmWrite(MOTOR_PWM_DER, pwmDer);
 }
 
+/*
+ * Velocidad de Motores en porcentaje -100 a 100
+ * */
+
+void escribirMotorIzq(int8_t porcentajeIzq)
+{
+    if (porcentajeIzq >= -MOTOR_VEL_MAX && porcentajeIzq <= MOTOR_VEL_MAX)
+    {
+        int16_t pwmIzq = porcentajeIzq
+                * ((float) MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
+        pwmWrite(MOTOR_PWM_IZQ, pwmIzq);
+    }
+
+}
+
+void escribirMotorDer(int8_t porcentajeDer)
+{
+    if (porcentajeDer >= -MOTOR_VEL_MAX && porcentajeDer <= MOTOR_VEL_MAX)
+    {
+        int16_t pwmDer = porcentajeDer
+                * ((float) MOTOR_PWM_PARADO / MOTOR_VEL_MAX) + MOTOR_PWM_PARADO;
+        pwmWrite(MOTOR_PWM_DER, pwmDer);
+    }
+}
+
+void escribirMotores(int8_t porcentajeIzq, int8_t porcentajeDer)
+{
+    escribirMotorIzq(porcentajeIzq);
+    escribirMotorDer(porcentajeDer);
+}
+
+/*
+ * Velocidad de Motores en cm/s
+ * */
+
+void escribirVelMotorIzq(int8_t velMotIzq)
+{
+
+}
+
+void escribirVelMotorDer(int8_t velMotDer)
+{
+
+}
+void escribirVelMotores(int8_t velMotIzq, int8_t velMotDer)
+{
+
+}

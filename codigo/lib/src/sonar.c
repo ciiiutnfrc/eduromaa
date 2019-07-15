@@ -15,7 +15,7 @@ void iniSonar(void)
     /* Inicializar el sensor ultrasonico #0 */
     ultrasonicSensorConfig(ULTRASONIC_SENSOR_0, ULTRASONIC_SENSOR_ENABLE);
 
-    /* Configurar pin de encendido/apagado (ToDo) */
+    /* Configurar pin de encendido/apagado */
     gpioConfig(SONAR_ONOFF_GPIO, GPIO_ENABLE);
     gpioConfig(SONAR_ONOFF_GPIO, GPIO_OUTPUT);
 }
@@ -39,6 +39,7 @@ bool leerSonar(float *dist_cm)
         *dist_cm = ultrasonicSensorGetDistance(ULTRASONIC_SENSOR_0, CM);
         return true; /* Sin error */
     } else
+        *dist_cm = 500;
         return false; /* Con error */
 }
 

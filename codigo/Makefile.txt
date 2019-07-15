@@ -35,7 +35,7 @@ MODULES=$(sort $(dir $(wildcard libs/*/)))
 SRC=$(wildcard $(PROGRAM_PATH_AND_NAME)/src/*.c)
 SRC+=$(foreach m, $(MODULES), $(wildcard $(m)/src/*.c))
 
-# 20190609 - MSB - Agragada librería de EduRoMAA
+# 20190709 - MSB - Agragada librerÃ­a de EduRoMAA
 INCLUDES += -Ieduromaa/lib/inc
 SRC+=$(wildcard eduromaa/lib/src/*.c)
 
@@ -170,7 +170,7 @@ size: $(TARGET)
 	$(Q)$(SIZE) $<
 
 # Download a program into board
-# Eliminada la opción "unlock" que traba write_image en OpenOCD v0.10 
+# Eliminada la opciï¿½n "unlock" que traba write_image en OpenOCD v0.10 
 .download_flash: $(TARGET_BIN)
 	@echo DOWNLOAD to FLASH
 	$(Q)$(OOCD) -f $(OOCD_SCRIPT) \

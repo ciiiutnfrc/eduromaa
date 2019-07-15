@@ -10,6 +10,13 @@
 #define TACOMETRO_CAP_IZQ 2
 #define TACOMETRO_CAP_DER 3
 
+#define RUEDA_MAX_RPM    100    // Máximas vueltas por minuto del eje de la rueda
+#define DIAMETRO_RUEDAS    6.67 // Diámetro de las ruedas del motos [cm]
+#define DIST_ENTRE_RUEDAS 13.25 // Distancia entre los centros de las ruedas
+#define CIRCUNF_RUEDAS (DIAMETRO_RUEDAS * 3.1416) // Distancia por vuelta de rueda
+#define CIRCUNF_GIRO (DIST_ENTRE_RUEDAS * 3.1416) // Distancia en giro 360°
+#define DIST_FLANCOS (CIRCUNF_RUEDAS / 20)
+
 uint32_t frec_timer;
 tacometro_t tacometro_izq, tacometro_der;
 
@@ -46,7 +53,7 @@ void iniTacometros(void)
 
     Chip_TIMER_Reset(LPC_TIMER0);
     Chip_TIMER_TIMER_SetCountClockSrc(LPC_TIMER0, TIMER_CAPSRC_RISING_PCLK,
-    TACOMETRO_CAP_IZQ);
+            TACOMETRO_CAP_IZQ);
 
     Chip_TIMER_ClearCapture(LPC_TIMER0, TACOMETRO_CAP_IZQ);
     Chip_TIMER_CaptureRisingEdgeEnable(LPC_TIMER0, TACOMETRO_CAP_IZQ);
@@ -68,6 +75,9 @@ void iniTacometros(void)
 void prenderTacometros(void)
 {
     gpioWrite(TACOMETRO_GPIO_H, TACOMETRO_ON);
+    tacometro_izq.t_flanco_previo = 0;
+    tacometro_der.t_flanco_previo = 0;
+
 }
 
 void apagarTacometros(void)
@@ -91,15 +101,14 @@ void TIMER0_IRQHandler(void)
         if (tacometro_izq.t_flanco_previo == 0)
         {
             tacometro_izq.t_flanco_previo = Chip_TIMER_ReadCapture(LPC_TIMER0,
-            TACOMETRO_CAP_IZQ);
+                    TACOMETRO_CAP_IZQ);
             tacometro_izq.cuenta = 0;
 
         } else
         {
-
+            tacometro_izq.t_flanco_previo = tacometro_izq.t_flanco_actual;
             tacometro_izq.t_flanco_actual = Chip_TIMER_ReadCapture(LPC_TIMER0,
-            TACOMETRO_CAP_IZQ);
-            tacometro_izq.cuenta++;
+                    TACOMETRO_CAP_IZQ);
 
             // Si la cuenta actual es menor a la anterior, hubo un desborde del TIMER
             if (tacometro_izq.t_flanco_actual < tacometro_izq.t_flanco_previo)
@@ -113,9 +122,7 @@ void TIMER0_IRQHandler(void)
                 tacometro_izq.t_flancos = tacometro_izq.t_flanco_actual
                         - tacometro_izq.t_flanco_previo;
             }
-            tacometro_izq.t_flanco_previo = tacometro_izq.t_flanco_actual;
         }
-
     }
 
     if (Chip_TIMER_CapturePending(LPC_TIMER0, TACOMETRO_CAP_DER))
@@ -124,12 +131,13 @@ void TIMER0_IRQHandler(void)
         if (tacometro_der.t_flanco_previo == 0)
         {
             tacometro_der.t_flanco_previo = Chip_TIMER_ReadCapture(LPC_TIMER0,
-            TACOMETRO_CAP_DER);
+                    TACOMETRO_CAP_DER);
             tacometro_der.cuenta = 0;
         } else
         {
+            tacometro_der.t_flanco_previo = tacometro_der.t_flanco_actual;
             tacometro_der.t_flanco_actual = Chip_TIMER_ReadCapture(LPC_TIMER0,
-            TACOMETRO_CAP_DER);
+                    TACOMETRO_CAP_DER);
             tacometro_der.cuenta++;
 
             // Si la cuenta actual es menor a la anterior, hubo un desborde del TIMER
@@ -144,7 +152,6 @@ void TIMER0_IRQHandler(void)
                 tacometro_der.t_flancos = tacometro_der.t_flanco_actual
                         - tacometro_der.t_flanco_previo;
             }
-            tacometro_der.t_flanco_previo = tacometro_der.t_flanco_actual;
         }
     }
 }

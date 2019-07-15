@@ -52,7 +52,6 @@ bool_t iniParagolpes(void)
     if (gpioConfig(PARAGOLPES_IZQ, GPIO_INPUT) &&
     gpioConfig(PARAGOLPES_DER, GPIO_INPUT))
     {
-
         return 1;
     }
     return 0;
