@@ -11,7 +11,6 @@
 #define TACOMETRO_CAP_DER 3
 
 #define RUEDA_MAX_RPM    100    // Máximas vueltas por minuto del eje de la rueda
-#define DIAMETRO_RUEDAS    6.67 // Diámetro de las ruedas del motos [cm]
 #define DIST_ENTRE_RUEDAS 13.25 // Distancia entre los centros de las ruedas
 #define CIRCUNF_RUEDAS (DIAMETRO_RUEDAS * 3.1416) // Distancia por vuelta de rueda
 #define CIRCUNF_GIRO (DIST_ENTRE_RUEDAS * 3.1416) // Distancia en giro 360°

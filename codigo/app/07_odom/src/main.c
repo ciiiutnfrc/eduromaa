@@ -15,84 +15,127 @@
 #define MARCHA_LENTA  50
 #define MOTOR_PARADO  0
 
+#define DIAMETRO_RUEDAS_CM   6.67 // Diámetro de las ruedas [cm]
+#define RANURAS_ENCODER     20
+#define DIST_CUENTA_CM (3.1416 * DIAMETRO_RUEDAS_CM / RANURAS_ENCODER) // Longitud 1 flanco
+
+uint8_t procesar_sonar(void);
+void procesar_seguidor_linea(uint8_t vel_ruedas);
+
 /*==================[implementaciones]=======================================*/
 int main(void)
 {
-    float dist_cm;
-    uint8_t marcha;
-    delay_t retardo_ir; // Variable de Retardo NO bloqueante para infrarrojos
 
+    uint32_t ti_cuenta_anterior, ti_dist_recorrida;
+    uint8_t marcha, ti_vel_cuentas_seg, ti_vel_cm_seg, ti_rpm;
+
+    // Variables para Retardos NO bloqueantes
+    delay_t retardo_ir, retardo_uart, retardo_odometria;
+    tacometro_t tacoIzq, tacoDer;
 
     iniEduromaa();  // Inicializa EduRoMAA
 
-    /* Inicializa seguidor de líneas */
+    /* Prender solo los Módulos a utilizar */
     prenderSensoresIR();
-    delayInit(&retardo_ir, 20);
-
-    /* Inicializa control de motores según distancia aobstáculos */
     prenderSonar();
     prenderMotores();
+    prenderTacometros();
+
     marcha = 0;
+    ti_dist_recorrida = 0;
+    delayInit(&retardo_ir, 20);
+    delayInit(&retardo_odometria, 1000);
+    delayInit(&retardo_uart, 2000);
 
 
     while (1)
     {
-
         if (delayRead(&retardo_ir))
         {
+            marcha = procesar_sonar();
+            procesar_seguidor_linea(marcha);
+        }
 
-            leerSonar(&dist_cm);
-            if (dist_cm < 5)
-            {
-                marcha = MOTOR_PARADO;
-            } else if (dist_cm < 10)
-            {
-                marcha = MARCHA_LENTA;
+        if (delayRead(&retardo_odometria))
+        {
+            leerTacometros(&tacoIzq, &tacoDer);
 
-            } else
-            {
-                marcha = MARCHA_NORMAL;
-            }
+            ti_vel_cuentas_seg = tacoIzq.cuenta - ti_cuenta_anterior;
+            ti_vel_cm_seg = ti_vel_cuentas_seg * DIST_CUENTA_CM;
 
-            switch (seguir_linea())
-            {
-            case LINEA_IZQ_DER_OK:
-                gpioWrite(LED1, OFF);
-                gpioWrite(LED2, ON);
-                gpioWrite(LED3, OFF);
-                /* Motores: ambos avanzan a la misma velocidad */
-                escribirMotores(marcha, marcha);
-                break;
-            case LINEA_DER_OK:
-                gpioWrite(LED1, ON);
-                gpioWrite(LED2, OFF);
-                gpioWrite(LED3, OFF);
-                /* Motores: motor izquierdo avanza a mayor velocidad que el derecho */
-                escribirMotores(marcha/2 , marcha);
-                break;
-            case LINEA_IZQ_OK:
-                gpioWrite(LED1, OFF);
-                gpioWrite(LED2, OFF);
-                gpioWrite(LED3, ON);
-                /* Motores: motor derecho avanza a mayor velocidad que el izquierdo */
-                escribirMotores(marcha, marcha/2);
-                break;
-            case LINEA_DETENER:
-            default:
-                gpioWrite(LED1, OFF);
-                gpioWrite(LED2, OFF);
-                gpioWrite(LED3, OFF);
-                /* Motores: ambos motores se detienen */
-                escribirMotores(MOTOR_PARADO, MOTOR_PARADO);
+            ti_rpm = ti_vel_cuentas_seg * 60;
 
-                break;
-            }
+            ti_dist_recorrida += ti_vel_cm_seg;
+
+            ti_cuenta_anterior = tacoIzq.cuenta;
+
+        }
+
+        if (delayRead(&retardo_uart))
+        {
+
+            printf("Ti[c/s]: %d\tTi[cm/s]: %d\tTi[rpm]:%d\tTi[m]:%d\r\n",
+                    ti_vel_cuentas_seg, ti_vel_cm_seg, ti_rpm,
+                    ti_dist_recorrida);
         }
     }
-    /* NO DEBE LLEGAR NUNCA AQUI, debido a que a este programa no es llamado
-     por ningun S.O. */
+
+    /* NO DEBE LLEGAR NUNCA AQUI, ¿el programa se ejecuta eternamente? */
     return 0;
 }
 
-/*==================[end of file]============================================*/
+uint8_t procesar_sonar(void)
+{
+    float dist_cm;
+
+    leerSonar(&dist_cm);
+
+    if (dist_cm < 5)
+    {
+        return MOTOR_PARADO;
+    } else if (dist_cm < 10)
+    {
+        return MARCHA_LENTA;
+
+    } else
+    {
+        return MARCHA_NORMAL;
+    }
+}
+
+void procesar_seguidor_linea(uint8_t vel_ruedas)
+{
+    switch (seguir_linea())
+    {
+    case LINEA_IZQ_DER_OK:
+        gpioWrite(LED1, OFF);
+        gpioWrite(LED2, ON);
+        gpioWrite(LED3, OFF);
+        /* Motores: ambos avanzan a la misma velocidad */
+        escribirMotores(vel_ruedas, vel_ruedas);
+        break;
+    case LINEA_DER_OK:
+        gpioWrite(LED1, ON);
+        gpioWrite(LED2, OFF);
+        gpioWrite(LED3, OFF);
+        /* Motores: motor izquierdo avanza a mayor velocidad que el derecho */
+        escribirMotores(vel_ruedas/2, vel_ruedas);
+        break;
+    case LINEA_IZQ_OK:
+        gpioWrite(LED1, OFF);
+        gpioWrite(LED2, OFF);
+        gpioWrite(LED3, ON);
+        /* Motores: motor derecho avanza a mayor velocidad que el izquierdo */
+        escribirMotores(vel_ruedas, vel_ruedas/ 2);
+        break;
+    case LINEA_DETENER:
+    default:
+        gpioWrite(LED1, OFF);
+        gpioWrite(LED2, OFF);
+        gpioWrite(LED3, OFF);
+        /* Motores: ambos motores se detienen */
+        escribirMotores(MOTOR_PARADO, MOTOR_PARADO);
+        break;
+    }
+}
 

@@ -23,31 +23,32 @@ int main(void)
 {
 
     uint8_t marcha;
-    delay_t retardo_ir; // Variable de Retardo NO bloqueante para infrarrojos
+    delay_t retardo_ir; // Variables para Retardos NO bloqueante
+    tacometro_t tacoIzq, tacoDer;
 
     iniEduromaa();  // Inicializa EduRoMAA
 
-    /* Inicializa seguidor de líneas */
+    /* Prender solo los Módulos a utilizar */
     prenderSensoresIR();
-    delayInit(&retardo_ir, 20);
-
-    /* Inicializa control de motores según distancia aobstáculos */
     prenderSonar();
     prenderMotores();
+    prenderTacometros();
+
     marcha = 0;
+    delayInit(&retardo_ir, 20);
+
 
     while (1)
     {
-
         if (delayRead(&retardo_ir))
         {
             marcha = procesar_sonar();
             procesar_seguidor_linea(marcha);
         }
+
     }
 
-    /* NO DEBE LLEGAR NUNCA AQUI, debido a que a este programa no es llamado
-     por ningun S.O. */
+    /* NO DEBE LLEGAR NUNCA AQUI, ¿el programa se ejecuta eternamente? */
     return 0;
 }
 
