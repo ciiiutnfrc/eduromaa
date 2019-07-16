@@ -36,12 +36,22 @@ void apagarBT(void)
     gpioWrite(BT_H, BT_OFF);
 }
 
-bool_t leerBT(uint8_t *dato)
+bool_t recibirBT(uint8_t *dato)
 {
 
     if (bt_on == true)
     {
         return uartReadByte(UART_232, dato); /* Sin error */
+    } else
+        return false; /* Con error */
+}
+
+bool_t transmitirBT(const char* str)
+{
+    if (bt_on == true)
+    {
+        uartWriteString(UART_232, str); /* Sin error */
+        return true;
     } else
         return false; /* Con error */
 }

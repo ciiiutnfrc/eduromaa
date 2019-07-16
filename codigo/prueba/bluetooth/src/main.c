@@ -25,7 +25,7 @@ int main(void)
     {
         delay(2000);
         gpioWrite(LED1, OFF);
-        if (leerBT(&bt_dato))
+        if (recibirBT(&bt_dato))
         {
             if (bt_dato != '\n' && bt_dato != '\r')
             {

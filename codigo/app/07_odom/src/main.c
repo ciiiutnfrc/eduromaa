@@ -15,9 +15,10 @@
 #define MARCHA_LENTA  50
 #define MOTOR_PARADO  0
 
-#define DIAMETRO_RUEDAS_CM   6.67 // Diámetro de las ruedas [cm]
-#define RANURAS_ENCODER     20
-#define DIST_CUENTA_CM (3.1416 * DIAMETRO_RUEDAS_CM / RANURAS_ENCODER) // Longitud 1 flanco
+#define DIAMETRO_RUEDAS_CM   6.67   // Diámetro de las ruedas [cm]
+#define RANURAS_ENCODER     20      // Cantidad de ranuras del encoder
+// Longitud del arco de la rueda entre 2 pulsos de enconder
+#define DIST_CUENTA_CM (3.1416 * DIAMETRO_RUEDAS_CM / RANURAS_ENCODER)
 
 uint8_t procesar_sonar(void);
 void procesar_seguidor_linea(uint8_t vel_ruedas);
@@ -26,8 +27,12 @@ void procesar_seguidor_linea(uint8_t vel_ruedas);
 int main(void)
 {
 
-    uint32_t ti_cuenta_anterior, ti_dist_recorrida;
-    uint8_t marcha, ti_vel_cuentas_seg, ti_vel_cm_seg, ti_rpm;
+    uint32_t ti_cuenta_anterior, ti_dist_recorrida, ti_rpm;
+    uint8_t td_vel_cuentas_seg, td_vel_cm_seg;
+    uint32_t td_cuenta_anterior, td_dist_recorrida, td_rpm;
+    uint8_t ti_vel_cuentas_seg, ti_vel_cm_seg;
+
+    uint8_t marcha;
 
     // Variables para Retardos NO bloqueantes
     delay_t retardo_ir, retardo_uart, retardo_odometria;
@@ -62,21 +67,27 @@ int main(void)
 
             ti_vel_cuentas_seg = tacoIzq.cuenta - ti_cuenta_anterior;
             ti_vel_cm_seg = ti_vel_cuentas_seg * DIST_CUENTA_CM;
-
-            ti_rpm = ti_vel_cuentas_seg * 60;
-
+            ti_rpm = ti_vel_cuentas_seg * 3;// <--¿De dónde sale el 3?
             ti_dist_recorrida += ti_vel_cm_seg;
-
             ti_cuenta_anterior = tacoIzq.cuenta;
+
+            td_vel_cuentas_seg = tacoDer.cuenta - td_cuenta_anterior;
+            td_vel_cm_seg = td_vel_cuentas_seg * DIST_CUENTA_CM;
+            td_rpm = td_vel_cuentas_seg * 3;// <--¿De dónde sale el 3?
+            td_dist_recorrida += td_vel_cm_seg;
+            td_cuenta_anterior = tacoDer.cuenta;
 
         }
 
         if (delayRead(&retardo_uart))
         {
 
-            printf("Ti[c/s]: %d\tTi[cm/s]: %d\tTi[rpm]:%d\tTi[m]:%d\r\n",
+            printf("Ti[c/s]: %d\tTi[cm/s]: %d\tTi[rpm]:%d\tTi[cm]:%d\r\n",
                     ti_vel_cuentas_seg, ti_vel_cm_seg, ti_rpm,
                     ti_dist_recorrida);
+            printf("Td[c/s]: %d\tTd[cm/s]: %d\tTd[rpm]:%d\tTd[cm]:%d\r\n",
+                                td_vel_cuentas_seg, td_vel_cm_seg, td_rpm,
+                                td_dist_recorrida);
         }
     }
 

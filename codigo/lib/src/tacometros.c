@@ -7,13 +7,14 @@
 #define TACOMETRO_ON      ON
 #define TACOMETRO_OFF     OFF
 
-#define TACOMETRO_CAP_IZQ 2
-#define TACOMETRO_CAP_DER 3
+#define TACOMETRO_CAP_IZQ 3
+#define TACOMETRO_CAP_DER 2
 
-#define RUEDA_MAX_RPM    100    // Máximas vueltas por minuto del eje de la rueda
+#define RUEDA_MAX_RPM    130    // Velocidad nominal del motor
+#define DIAMETRO_RUEDAS    6.67 // Diámetro de las ruedas del robot [cm]
 #define DIST_ENTRE_RUEDAS 13.25 // Distancia entre los centros de las ruedas
-#define CIRCUNF_RUEDAS (DIAMETRO_RUEDAS * 3.1416) // Distancia por vuelta de rueda
-#define CIRCUNF_GIRO (DIST_ENTRE_RUEDAS * 3.1416) // Distancia en giro 360°
+#define CIRCUNF_RUEDAS (DIAMETRO_RUEDAS * 3.1416) // Distancia en giro 360° rueda
+#define CIRCUNF_GIRO (DIST_ENTRE_RUEDAS * 3.1416) // Distancia en giro 360° de robot
 #define DIST_FLANCOS (CIRCUNF_RUEDAS / 20)
 
 uint32_t frec_timer;
@@ -28,13 +29,13 @@ void iniTacometros(void)
     gpioWrite(TACOMETRO_GPIO_H, TACOMETRO_OFF);
 
     /*Configurar pin de Entrada de Captura
-     * ETH_TXD1: ENC_IZQ --> P1_20 - FUNC4 - T0_CAP2
+     * ETH_TXD1: ENC_DER --> P1_20 - FUNC4 - T0_CAP2
      */
     Chip_SCU_PinMux(0x1, 20, MD_PLN_FAST, SCU_MODE_FUNC4);
     LPC_GIMA->CAP0_IN[0][2] = 0x20;
 
     /*Configurar pin de Entrada de Captura
-     * MDIO: ENC_DER	--> P1_17 - FUNC4 - T0_CAP3
+     * MDIO: ENC_IZQ --> P1_17 - FUNC4 - T0_CAP3
      */
     Chip_SCU_PinMux(1, 17, MD_PLN_FAST, SCU_MODE_FUNC4);
     /*Ver que Canal 3 de todos los capture se configura distinto!*/
@@ -108,6 +109,7 @@ void TIMER0_IRQHandler(void)
             tacometro_izq.t_flanco_previo = tacometro_izq.t_flanco_actual;
             tacometro_izq.t_flanco_actual = Chip_TIMER_ReadCapture(LPC_TIMER0,
                     TACOMETRO_CAP_IZQ);
+            tacometro_izq.cuenta++;
 
             // Si la cuenta actual es menor a la anterior, hubo un desborde del TIMER
             if (tacometro_izq.t_flanco_actual < tacometro_izq.t_flanco_previo)
