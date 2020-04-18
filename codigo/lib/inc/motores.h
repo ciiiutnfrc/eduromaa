@@ -1,5 +1,5 @@
-#ifndef _MOTORES_H
-#define _MOTORES_H
+#ifndef MOTORES_H
+#define MOTORES_H
 
 /*==================[inclusiones]============================================*/
 #include "sapi.h"
@@ -37,7 +37,5 @@ void escribirVelMotorIzq(int8_t velMotIzq);
 void escribirVelMotorDer(int8_t velMotDer);
 void escribirVelMotores(int8_t velMotIzq, int8_t velMotDer);
 
-
-
-#endif
+#endif /* MOTORES_H */
 

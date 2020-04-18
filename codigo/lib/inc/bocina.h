@@ -1,5 +1,5 @@
-#ifndef _BOCINA_H
-#define _BOCINA_H
+#ifndef BOCINA_H
+#define BOCINA_H
 
 /*==================[inclusiones]=============================================*/
 #include "sapi.h"
@@ -11,4 +11,5 @@ void iniBocina(void);
 void prenderBocina(void);
 void apagarBocina(void);
 
-#endif /* _BOCINA_H */
+#endif /* BOCINA_H */
+

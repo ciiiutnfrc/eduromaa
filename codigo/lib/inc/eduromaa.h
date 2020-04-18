@@ -1,5 +1,5 @@
-#ifndef _EDUROMAA_H
-#define _EDUROMAA_H
+#ifndef EDUROMAA_H
+#define EDUROMAA_H
 
 /*==================[inclusiones]=============================================*/
 #include "sapi.h"
@@ -17,4 +17,5 @@
 /*==================[protitipos]==============================================*/
 void iniEduromaa(void);
 
-#endif /* _EDUROMAA_H */
+#endif /* EDUROMAA_H */
+

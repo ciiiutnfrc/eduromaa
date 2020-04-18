@@ -1,15 +1,14 @@
-#ifndef _PARAGOLPES_H
-#define _PARAGOLPES_H
+#ifndef PARAGOLPES_H
+#define PARAGOLPES_H
 
 /*==================[inclusiones]============================================*/
 #include "sapi.h"
-//#include "chip.h"
 #include "board.h"
 
 /*==================[definiciones]===========================================*/
-typedef enum
-{
-    LIBRE, GOLPE_IZQ, GOLPE_DER, GOLPE_AMBOS
+
+typedef enum {
+  LIBRE, GOLPE_IZQ, GOLPE_DER, GOLPE_AMBOS
 } estadosParagolpes;
 
 /*==================[protitipos]=============================================*/
@@ -27,5 +26,5 @@ uint8_t apagarIntParagolpes(void);
 void paragolpesIzqInt(void);
 void paragolpesDerInt(void);
 
-#endif /* _PARAGOLPES_H */
+#endif /* PARAGOLPES_H */
 
