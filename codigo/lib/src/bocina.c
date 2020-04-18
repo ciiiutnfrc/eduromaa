@@ -7,19 +7,21 @@
 #define BOCINA_ON ON
 
 /*==================[implementaciones]==============================================*/
+
 void iniBocina(void)
 {
-    gpioConfig(BOCINA_GPIO, GPIO_ENABLE);
-    gpioConfig(BOCINA_GPIO, GPIO_OUTPUT);
-    gpioWrite(BOCINA_GPIO, BOCINA_OFF);
+  gpioConfig(BOCINA_GPIO, GPIO_ENABLE);
+  gpioConfig(BOCINA_GPIO, GPIO_OUTPUT);
+  gpioWrite(BOCINA_GPIO, BOCINA_OFF);
 }
 
 void prenderBocina(void)
 {
-    gpioWrite(BOCINA_GPIO, BOCINA_ON);
+  gpioWrite(BOCINA_GPIO, BOCINA_ON);
 }
 
 void apagarBocina(void)
 {
-    gpioWrite(BOCINA_GPIO, BOCINA_OFF);
+  gpioWrite(BOCINA_GPIO, BOCINA_OFF);
 }
+
