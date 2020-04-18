@@ -19,7 +19,7 @@ void apagarMotores(void);
 
 void escribirPWMMotorIzq(int8_t pwmIzq);
 void escribirPWMMotorDer(int8_t pwmDer);
-void escribirPWMMotores(uint8_t pwmDer, uint8_t pwmIzq);
+void escribirPWMMotores(uint8_t pwmIzq, uint8_t pwmDer);
 
 /*
  * Velocidad de Motores en porcentaje -100 a 100

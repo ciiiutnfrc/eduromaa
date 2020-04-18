@@ -57,7 +57,7 @@ void escribirPWMMotorDer(int8_t pwmDer)
   pwmWrite(MOTOR_PWM_DER, pwmDer);
 }
 
-void escribirPWMMotores(uint8_t pwmDer, uint8_t pwmIzq)
+void escribirPWMMotores(uint8_t pwmIzq, uint8_t pwmDer)
 {
   pwmWrite(MOTOR_PWM_IZQ, pwmIzq);
   pwmWrite(MOTOR_PWM_DER, pwmDer);
