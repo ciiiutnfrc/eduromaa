@@ -1,28 +1,30 @@
 # EduRoMAA - Robot Educativo Abierto y de Bajo Costo
 
-El robot móvil EduRoMAA fue desarrollado con fines didácticos para la enseñanza de programación de sistemas embebidos utilizando la EduCIAA (versión educativa de la [Computadora Industrial Abierta Argentina](http://www.proyecto-ciaa.com.ar/)) en el [Centro de Investigación en Informática para la Ingeniería](http://ciii.frc.utn.edu.ar/PublicacionesCIII) de la [Universidad Tecnológica Nacional, Facultad Regional Córdoba](https://www.frc.utn.edu.ar/). 
+El robot móvil EduRoMAA fue desarrollado con fines didácticos para la enseñanza de programación de sistemas embebidos utilizando la EduCIAA (versión educativa de la [Computadora Industrial Abierta Argentina](http://www.proyecto-ciaa.com.ar/)) en el [Centro de Investigación en Informática para la Ingeniería](http://ciii.frc.utn.edu.ar/PublicacionesCIII) de la [Universidad Tecnológica Nacional, Facultad Regional Córdoba](https://www.frc.utn.edu.ar/), bajo el proyecto [Robot móvil de hardware y software abierto con fines educativos en ingeniería electrónica](https://ciii.frc.utn.edu.ar/ciii/proyecto-utn4884/).
 
-Toda la información del diseño se encuentra públicamente disponible en: https://github.com/ciiiutnfrc/eduromaa/ 
+El robot EduRoMAA es un robot de tracción diferencial fabricado mediante corte láser e impresión 3D. 
+Dispone de dos ruedas de tracción controladas de forma independiente a fin de generar la trayectoria deseada, y una semiesfera que hace de apoyo. 
+Cuenta también con sensores de bajo costo comunes en robótica tales como: paragolpes, tacómetro en las ruedas, sensor de distancia por ultrasonido y sensores infrarrojos para la detección de línea; además de comunicación inalámbrica utilizando el protocolo Bluetooth. 
+El robot incluye las baterías de alimentación, el cargador por microUSB y fuente de tensión regulada.
 
 Para la realización del EduRoMAA se utilizó únicamente software libre: 
-1. KiCAD para el circuito electrónico y PCB.
-2. FreeCAD para la estructura mecánica.
-3. Eclipse IDE con GCC-ARM para el firmware. Funciona tanto en Linux como Windows.
+1. [KiCAD](https://www.kicad.org/) para el circuito electrónico y PCB.
+2. [FreeCAD](https://www.freecadweb.org/) para la estructura mecánica.
+3. Eclipse IDE con GCC-ARM para el firmware.
 
 
 ## Videos
 
-* Despiece 3D de los componentes del EduRoMAA: [https://www.youtube.com/watch?v=gHjaK3ePBkI](https://www.youtube.com/watch?v=gHjaK3ePBkI)
-* Prueba de tracción del EduRoMAA: [https://www.youtube.com/watch?v=mks88KmrYdc](https://www.youtube.com/watch?v=mks88KmrYdc)
+* Despiece 3D de los componentes del EduRoMAA: [https://www.youtube.com/watch?v=gHjaK3ePBkI](https://www.youtube.com/watch?v=gHjaK3ePBkI).
+* Prueba de tracción del EduRoMAA: [https://www.youtube.com/watch?v=mks88KmrYdc](https://www.youtube.com/watch?v=mks88KmrYdc).
 
-## Características
+## Publicaciones
+  * Gonzalo Perez-Paina, Martín Baudino, Diego Gonzalez-Dondo, Facundo Navarro, and Patricio Reus Merlo. **"Robot móvil de diseño abierto y bajo costo con fines didácticos basado en la educiaa"**. _In Proceedings of the X Jornadas Argentinas de Robótica (JAR)_. Neuquén, Argentina, 2019.
 
-* 2x motorreductores de corriente continua (tracción diferencial).
-* 2x sensores ópticos para medición de velocidad de las ruedas.
-* 1x sonar frontal para detección de obstáculos.
-* 1x módulo Bluetooth para comunicación inalámbrica con celulares o tabletas.
-* 2x sensores ópticos reflectivos en la base para detección de superficie.
-* 2x paragolpes posteriores para detección de colisiones.
-* 1x resonador piezoeléctrico para utilizar como bocina o alarma.
-* 1x conexión USB para comunicación serial con PC.
+## Más información
+  * [Características principales](doc/Caracteristicas.md).
+  * Construcción:
+    - Estructura mecánica.
+    - Placa de acondicionamiento.
+  * Ensamblado.
 
