@@ -7,16 +7,23 @@ Dispone de dos ruedas de tracción controladas de forma independiente a fin de g
 Cuenta también con sensores de bajo costo comunes en robótica tales como: paragolpes, tacómetro en las ruedas, sensor de distancia por ultrasonido y sensores infrarrojos para la detección de línea; además de comunicación inalámbrica utilizando el protocolo Bluetooth. 
 El robot incluye las baterías de alimentación, el cargador por microUSB y fuente de tensión regulada.
 
-Para la realización del EduRoMAA se utilizó únicamente software libre: 
-1. [KiCAD](https://www.kicad.org/) para el circuito electrónico y PCB.
-2. [FreeCAD](https://www.freecadweb.org/) para la estructura mecánica.
-3. Eclipse IDE con GCC-ARM para el firmware.
+El EduRoMAA cuenta con:
+  * Tacómetros en las ruedas para la medición de velocidad.
+  * Sensor de distancia por ultrasonido en la parte frontal.
+  * Sensores de detección de líneas en la parte inferior.
+  * Paragolpes en la parte trasera para detección de colisiones.
+  * Comunicación inalámbrica por Bluetooth.
+  * Bocina o buzzer.
+  * Llave de encendido/apagado con LED indicador.
+  * Baterías incorporadas con indicador de nivel y cargador por micro-USB.
+
+Para la realización del EduRoMAA se utilizó únicamente software libre: [KiCAD](https://www.kicad.org/) para el circuito electrónico y PCB, [FreeCAD](https://www.freecadweb.org/) para la estructura mecánica y Eclipse IDE con GCC-ARM para el firmware.
 
 
 ## Videos
 
-* Despiece 3D de los componentes del EduRoMAA: [https://www.youtube.com/watch?v=gHjaK3ePBkI](https://www.youtube.com/watch?v=gHjaK3ePBkI).
-* Prueba de tracción del EduRoMAA: [https://www.youtube.com/watch?v=mks88KmrYdc](https://www.youtube.com/watch?v=mks88KmrYdc).
+  * Despiece 3D de los componentes del EduRoMAA: [https://www.youtube.com/watch?v=gHjaK3ePBkI](https://www.youtube.com/watch?v=gHjaK3ePBkI).
+  * Prueba de tracción del EduRoMAA: [https://www.youtube.com/watch?v=mks88KmrYdc](https://www.youtube.com/watch?v=mks88KmrYdc).
 
 ## Publicaciones
   * Gonzalo Perez-Paina, Martín Baudino, Diego Gonzalez-Dondo, Facundo Navarro, and Patricio Reus Merlo. **"Robot móvil de diseño abierto y bajo costo con fines didácticos basado en la educiaa"**. _In Proceedings of the X Jornadas Argentinas de Robótica (JAR)_. Neuquén, Argentina, 2019.
