@@ -34,4 +34,5 @@ Para la realización del EduRoMAA se utilizó únicamente software libre: [KiCAD
     - Estructura mecánica.
     - Placa de acondicionamiento.
   * Ensamblado.
+  * [Conexión con EduCIAA](doc/ConexionEduCIAA.md).
 
