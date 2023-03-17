@@ -17,5 +17,24 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 
+
+
 # Archivos de salida, compilación, temporarios, etc.
 **/out/
+
+#ignores for kicad 6
+# Temporary files kicad v6
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
