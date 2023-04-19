@@ -2,9 +2,9 @@
 
 El robot móvil EduRoMAA fue desarrollado con fines didácticos para la enseñanza de programación de sistemas embebidos utilizando la EduCIAA (versión educativa de la [Computadora Industrial Abierta Argentina](http://www.proyecto-ciaa.com.ar/)) en el [Centro de Investigación en Informática para la Ingeniería](http://ciii.frc.utn.edu.ar/PublicacionesCIII) de la [Universidad Tecnológica Nacional, Facultad Regional Córdoba](https://www.frc.utn.edu.ar/), bajo el proyecto [Robot móvil de hardware y software abierto con fines educativos en ingeniería electrónica](https://ciii.frc.utn.edu.ar/ciii/proyecto-utn4884/).
 
-El robot EduRoMAA es un robot de tracción diferencial fabricado mediante corte láser e impresión 3D. 
-Dispone de dos ruedas de tracción controladas de forma independiente a fin de generar la trayectoria deseada, y una semiesfera que hace de apoyo. 
-Cuenta también con sensores de bajo costo comunes en robótica tales como: paragolpes, tacómetro en las ruedas, sensor de distancia por ultrasonido y sensores infrarrojos para la detección de línea; además de comunicación inalámbrica utilizando el protocolo Bluetooth. 
+El robot EduRoMAA es un robot de tracción diferencial fabricado mediante corte láser e impresión 3D.
+Dispone de dos ruedas de tracción controladas de forma independiente a fin de generar la trayectoria deseada, y una semiesfera que hace de apoyo.
+Cuenta también con sensores de bajo costo comunes en robótica tales como: paragolpes, tacómetro en las ruedas, sensor de distancia por ultrasonido y sensores infrarrojos para la detección de línea; además de comunicación inalámbrica utilizando el protocolo Bluetooth.
 El robot incluye las baterías de alimentación, el cargador por microUSB y fuente de tensión regulada.
 
 El EduRoMAA cuenta con:
@@ -35,4 +35,4 @@ Para la realización del EduRoMAA se utilizó únicamente software libre: [KiCAD
     - Placa de acondicionamiento.
   * Ensamblado.
   * [Conexión con EduCIAA](doc/ConexionEduCIAA.md).
-
+  * [Conexión con BluePill](doc/PlacaAdaptacionBluePill.md).
