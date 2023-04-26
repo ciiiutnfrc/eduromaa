@@ -36,3 +36,5 @@ Para la realización del EduRoMAA se utilizó únicamente software libre: [KiCAD
   * Ensamblado.
   * [Conexión con EduCIAA](doc/ConexionEduCIAA.md).
   * [Conexión con BluePill](doc/PlacaAdaptacionBluePill.md).
+  * [Códigos de prueba para la versión EduCIAA](codigo/EduCIAA/)
+  * [Códigos de prueba para la versión BluePill](codigo/BluePill/)
