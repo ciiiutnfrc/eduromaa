@@ -7,6 +7,7 @@ En este directorio se ecuentran distintos ejemplos de código Arduino para teste
  * [Placa Adaptadora](testeoPlacaAdaptadora/testeoPlacaAdaptadora.ino): LEDs y Pulsadores de la placa
  * [Bocina](testeoBocina/testeoBocina.ino) 
  * [Paragolpes](testeoParagolpes/testeoParagolpes.ino)
+ * [Sonar](testeoSonar/testeoSonar.ino)
 
 ### PWM
  * [Motores](testeoMotoresPWM/testeoMotoresPWM.ino) 
